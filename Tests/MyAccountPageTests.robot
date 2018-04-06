@@ -1,11 +1,14 @@
 *** Settings ***
+Library  Selenium2Library
 Resource  ../Data/InputData.robot
 Resource  ../Resources/Commom.robot
-Resource  ../Resources/PO/MyAccountRegApp.robot
+Resource  ../Resources/PO/MyAccount.robot
 Test Setup  Start Web Test
 Test Teardown  End Web Test
 
 *** Variables ***
 
 *** Test Cases ***
-Invali Register scenarios should display corret error message
+Invalid Register Scenarios Should Display Corret Error Message
+    [Tags]  Registration Errors
+

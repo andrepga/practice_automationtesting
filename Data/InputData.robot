@@ -1,8 +1,8 @@
 *** Variables ***
 # Configuration
 ${BROSER} = ff
-${BASE_URL} =  http://practice.automationtesting.in/my-account/
-${LOGIN_URL} =  http://practice.automationtesting.in/
+${BASE_URL} =  http://practice.automationtesting.in/
+${LOGIN_URL} =  http://practice.automationtesting.in/my-account/
 
 
 # Input Data
