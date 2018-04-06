@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generated="20180406 01:41:18.013" generator="Robot 3.0.2 (Python 2.7.14 on win32)">
+<suite source="C:\development\robot-scripts\practice_automationtesting\Tests\MyAccountPageTests.robot" id="s1" name="MyAccountPageTests">
+<test id="s1-t1" name="Invalid Register Scenarios Should Display Corret Error Message">
+<kw type="setup" name="Start Web Test" library="Commom">
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to given URL.</doc>
+<arguments>
+<arg>about:blank</arg>
+<arg>${BROWSER}</arg>
+</arguments>
+<msg timestamp="20180406 01:41:21.490" level="INFO">Opening browser 'ff' to base url 'about:blank'</msg>
+<status status="PASS" endtime="20180406 01:41:33.662" starttime="20180406 01:41:21.490"></status>
+</kw>
+<kw name="Maximize Browser Window" library="Selenium2Library">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" endtime="20180406 01:41:37.180" starttime="20180406 01:41:33.662"></status>
+</kw>
+<status status="PASS" endtime="20180406 01:41:37.180" starttime="20180406 01:41:21.475"></status>
+</kw>
+<kw name="Test Multiple Register Scenarios" library="MyAccountPage">
+<tags>
+<tag>Register Error Scenarios</tag>
+</tags>
+<kw name="Page Loaded" library="LandingPage">
+<kw name="Open Landing Page" library="LandingPage">
+<kw name="Go To" library="Selenium2Library">
+<doc>Navigates the active browser instance to the provided URL.</doc>
+<arguments>
+<arg>${BASE_URL}</arg>
+</arguments>
+<msg timestamp="20180406 01:41:37.183" level="INFO">Opening url 'http://practice.automationtesting.in/'</msg>
+<status status="PASS" endtime="20180406 01:41:54.677" starttime="20180406 01:41:37.183"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2s</arg>
+</arguments>
+<msg timestamp="20180406 01:41:56.678" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" endtime="20180406 01:41:56.678" starttime="20180406 01:41:54.677"></status>
+</kw>
+<status status="PASS" endtime="20180406 01:41:56.678" starttime="20180406 01:41:37.183"></status>
+</kw>
+<kw name="Verify Landing Page Loaded" library="LandingPage">
+<kw name="Page Should Contain Image" library="Selenium2Library">
+<doc>Verifies image identified by `locator` is found from current page.</doc>
+<arguments>
+<arg>xpath=//*[@id="n2-ss-6"]/div[1]/div/div/div[1]/div[1]/img</arg>
+</arguments>
+<msg timestamp="20180406 01:41:56.753" level="INFO">Current page contains image 'xpath=//*[@id="n2-ss-6"]/div[1]/div/div/div[1]/div[1]/img'.</msg>
+<status status="PASS" endtime="20180406 01:41:56.754" starttime="20180406 01:41:56.679"></status>
+</kw>
+<status status="PASS" endtime="20180406 01:41:56.755" starttime="20180406 01:41:56.679"></status>
+</kw>
+<status status="PASS" endtime="20180406 01:41:56.755" starttime="20180406 01:41:37.182"></status>
+</kw>
+<kw name="Go To My Account Page" library="TopNav">
+<kw name="Click Link" library="Selenium2Library">
+<doc>Clicks a link identified by locator.</doc>
+<arguments>
+<arg>${Link_Account_Text}</arg>
+</arguments>
+<msg timestamp="20180406 01:41:56.757" level="INFO">Clicking link 'text=My Account'.</msg>
+<kw name="Capture Page Screenshot" library="Selenium2Library">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<msg timestamp="20180406 01:41:57.076" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20180406 01:41:57.076" starttime="20180406 01:41:56.757"></status>
+</kw>
+<msg timestamp="20180406 01:41:57.158" level="FAIL">ValueError: Element locator with prefix 'text' is not supported</msg>
+<status status="FAIL" endtime="20180406 01:41:57.158" starttime="20180406 01:41:56.756"></status>
+</kw>
+<status status="FAIL" endtime="20180406 01:41:57.159" starttime="20180406 01:41:56.755"></status>
+</kw>
+<status status="FAIL" endtime="20180406 01:41:57.159" starttime="20180406 01:41:37.181"></status>
+</kw>
+<kw type="teardown" name="End Web Test" library="Commom">
+<kw name="Close All Browsers" library="Selenium2Library">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" endtime="20180406 01:42:01.302" starttime="20180406 01:41:57.161"></status>
+</kw>
+<status status="PASS" endtime="20180406 01:42:01.303" starttime="20180406 01:41:57.160"></status>
+</kw>
+<tags>
+<tag>Registration Errors</tag>
+</tags>
+<status status="FAIL" endtime="20180406 01:42:01.303" critical="yes" starttime="20180406 01:41:21.475">ValueError: Element locator with prefix 'text' is not supported</status>
+</test>
+<status status="FAIL" endtime="20180406 01:42:01.343" starttime="20180406 01:41:18.028"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="1" pass="0">Critical Tests</stat>
+<stat fail="1" pass="0">All Tests</stat>
+</total>
+<tag>
+<stat fail="1" pass="0">Registration Errors</stat>
+</tag>
+<suite>
+<stat fail="1" id="s1" name="MyAccountPageTests" pass="0">MyAccountPageTests</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
