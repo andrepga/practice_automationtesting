@@ -1,7 +1,5 @@
 *** Settings ***
 Library  Selenium2Library
-Resource  ../Data/InputData.robot
-
 
 *** Variables ***
 ${Text_Register} =  Register

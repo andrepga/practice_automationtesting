@@ -1,6 +1,6 @@
 *** Variables ***
 # Configuration
-${BROSER} = ff
+${BROWSER} =  ff
 ${BASE_URL} =  http://practice.automationtesting.in/
 ${LOGIN_URL} =  http://practice.automationtesting.in/my-account/
 

@@ -1,5 +1,5 @@
 *** Settings ***
-Library  Seleniun2Libery
+Library  Selenium2Library
 
 *** Variables ***
 ${Link_Account_Text} =  text=My Account
