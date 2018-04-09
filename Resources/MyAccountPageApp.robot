@@ -1,14 +1,17 @@
 *** Settings ***
 Resource  ../Resources/PO/LandingPage.robot
 Resource  ../Resources/PO/TopNav.robot
-Resource  ../Resources/PO/MyAccountPageApp.robot
+Resource  ../Resources/PO/Register.robot
 
 *** Variables ***
 
 
 *** Keywords ***
 Test Multiple Register Scenarios
-    [Tags]  Register Error Scenarios
+    [Arguments]  ${UserData}
     LandingPage.Page Loaded
     TopNav.Go To My Account Page
-    MyAccountPageApp.Verify Page Loaded
+    Register.Verify Page Loaded
+    Register.Fill Register Fields and Submit  ${UserData}
+    Register.Verify Error Message  ${UserData.ExpectedErrorMessage}
+
