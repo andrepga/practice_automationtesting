@@ -15,3 +15,9 @@ Test Multiple Register Scenarios
     Register.Fill Register Fields and Submit  ${UserData}
     Register.Verify Error Message  ${UserData.ExpectedErrorMessage}
 
+Test Multiple Login Scenarios
+  [Arguments]  ${UserData}
+  Verify Page Loaded
+  Fill Username Field
+  Fill Password Field
+
