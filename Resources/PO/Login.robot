@@ -31,10 +31,12 @@ Click Login Button
 
 Fill Login Fields and Submit
   [Arguments]  ${UserData}
-Verify Page Loaded
-Fill Username Field  ${UserData.User}
-Fill Password Field  ${UserData.Password}
-Click Login Button
+  Run Keyword Unless  '${UserData.User}' == '#BLANK'  Fill Username Field
+  Run Keyword Unless  '${UserData.Password}'  ==  '#BLANK'  Fill Password Field
+  Click Login Button
 
 
-
+Verify Error Message
+  [Arguments]   ${ErrorMessage}
+  Wait Until Page Contains  ${ErrorMessage}
+  Sleep  5s

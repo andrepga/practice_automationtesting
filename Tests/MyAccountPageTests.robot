@@ -19,3 +19,9 @@ Invalid Register Scenarios Should Display Corret Error Message
 
 Invalid Login Scenarios Should Display Correct Error Message
    [Template]  MyAccountPageApp.Test Multiple Login Scenarios
+   ${LOGIN_INVALID_USER}
+   ${LOGIN_INVALID_PASSWORD}
+   ${LOGIN_EMPTY_PASSWORD}
+   ${LOGIN_EMPTY_USERNAME}
+   ${LOGIN_EMPTY_USERNAME_PASSWORD}
+

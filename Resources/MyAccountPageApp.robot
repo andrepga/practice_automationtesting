@@ -22,6 +22,6 @@ Test Multiple Login Scenarios
     TopNav.Go To My Account Page
     Login.Verify Page Loaded
     Login.Fill Login Fields and Submit  ${UserData}
-    Login.Verify Error Message ${UserData.ExpectedErrorMessage}
+    Login.Verify Error Message  ${UserData.ExpectedErrorMessage}
 
 
