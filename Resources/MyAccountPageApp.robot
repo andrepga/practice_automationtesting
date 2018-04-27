@@ -2,6 +2,7 @@
 Resource  ../Resources/PO/LandingPage.robot
 Resource  ../Resources/PO/TopNav.robot
 Resource  ../Resources/PO/Register.robot
+Resource  ../Resources/PO/Login.robot
 
 *** Variables ***
 
@@ -16,8 +17,11 @@ Test Multiple Register Scenarios
     Register.Verify Error Message  ${UserData.ExpectedErrorMessage}
 
 Test Multiple Login Scenarios
-  [Arguments]  ${UserData}
-  Verify Page Loaded
-  Fill Username Field
-  Fill Password Field
+    [Arguments]  ${UserData}
+    LandingPage.Page Loaded
+    TopNav.Go To My Account Page
+    Login.Verify Page Loaded
+    Login.Fill Login Fields and Submit  ${UserData}
+    Login.Verify Error Message ${UserData.ExpectedErrorMessage}
+
 

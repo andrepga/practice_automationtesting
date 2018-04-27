@@ -6,7 +6,7 @@ Resource  ../../Data/InputData.robot
 ${LOGIN_TEXT} =  Login
 ${LOGIN_USERNAME_INPUT}=  xpath=//input[@id='username']
 ${LOGIN_PASSWORD_INPUT}=  xpath=//input[@id='password']
-${LOGIN_SUBMIT_BUTTON}=  name=register
+${LOGIN_SUBMIT_BUTTON}=  name=login
 
 
 *** Keywords ***
@@ -23,4 +23,15 @@ Fill Password Field
   [Arguments]  ${Password}
   Input Text  ${LOGIN_PASSWORD_INPUT}  ${Password}
 
+
+Click Login Button
+    Click Button  ${LOGIN_SUBMIT_BUTTON}
+
+
+Fill Login Fields and Submit
+  [Arguments]  ${UserData}
+Verify Page Loaded
+Fill Username Field  ${UserData.User}
+Fill Password Field  ${UserData.Password}
+Click Login Button
 
