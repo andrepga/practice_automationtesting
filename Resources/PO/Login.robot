@@ -31,8 +31,8 @@ Click Login Button
 
 Fill Login Fields and Submit
   [Arguments]  ${UserData}
-  Run Keyword Unless  '${UserData.User}' == '#BLANK'  Fill Username Field
-  Run Keyword Unless  '${UserData.Password}'  ==  '#BLANK'  Fill Password Field
+  Run Keyword Unless  '${UserData.User}' == '#BLANK'  Fill Username Field  ${UserData.User}
+  Run Keyword Unless  '${UserData.Password}' == '#BLANK'  Fill Password Field  ${UserData.Password}
   Click Login Button
 
 
