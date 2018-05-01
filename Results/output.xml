@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generated="20180501 11:19:15.253" generator="Robot 3.0.2 (Python 2.7.14 on win32)">
+<robot generated="20180501 19:02:35.851" generator="Robot 3.0.2 (Python 2.7.14 on win32)">
 <suite source="C:\development\robot-scripts\practice_automationtesting\Tests\MyAccountPageTests.robot" id="s1" name="MyAccountPageTests">
 <test id="s1-t1" name="Invalid Register Scenarios Should Display Corret Error Message">
 <kw type="setup" name="Start Web Test" library="Commom">
@@ -9,14 +9,14 @@
 <arg>about:blank</arg>
 <arg>${BROWSER}</arg>
 </arguments>
-<msg timestamp="20180501 11:19:15.469" level="INFO">Opening browser 'ff' to base url 'about:blank'</msg>
-<status status="PASS" endtime="20180501 11:19:24.465" starttime="20180501 11:19:15.468"></status>
+<msg timestamp="20180501 19:02:37.585" level="INFO">Opening browser 'ff' to base url 'about:blank'</msg>
+<status status="PASS" endtime="20180501 19:03:03.718" starttime="20180501 19:02:37.585"></status>
 </kw>
 <kw name="Maximize Browser Window" library="Selenium2Library">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" endtime="20180501 11:19:27.972" starttime="20180501 11:19:24.466"></status>
+<status status="PASS" endtime="20180501 19:03:07.265" starttime="20180501 19:03:03.734"></status>
 </kw>
-<status status="PASS" endtime="20180501 11:19:27.972" starttime="20180501 11:19:15.468"></status>
+<status status="PASS" endtime="20180501 19:03:07.265" starttime="20180501 19:02:37.585"></status>
 </kw>
 <kw name="Test Multiple Register Scenarios" library="MyAccountPageApp">
 <arguments>
@@ -29,18 +29,18 @@
 <arguments>
 <arg>${BASE_URL}</arg>
 </arguments>
-<msg timestamp="20180501 11:19:27.975" level="INFO">Opening url 'http://practice.automationtesting.in/'</msg>
-<status status="PASS" endtime="20180501 11:19:50.198" starttime="20180501 11:19:27.974"></status>
+<msg timestamp="20180501 19:03:07.265" level="INFO">Opening url 'http://practice.automationtesting.in/'</msg>
+<status status="PASS" endtime="20180501 19:03:27.245" starttime="20180501 19:03:07.265"></status>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>2s</arg>
 </arguments>
-<msg timestamp="20180501 11:19:52.199" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" endtime="20180501 11:19:52.199" starttime="20180501 11:19:50.198"></status>
+<msg timestamp="20180501 19:03:29.245" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" endtime="20180501 19:03:29.245" starttime="20180501 19:03:27.245"></status>
 </kw>
-<status status="PASS" endtime="20180501 11:19:52.199" starttime="20180501 11:19:27.974"></status>
+<status status="PASS" endtime="20180501 19:03:29.245" starttime="20180501 19:03:07.265"></status>
 </kw>
 <kw name="Verify Landing Page Loaded" library="LandingPage">
 <kw name="Page Should Contain Image" library="Selenium2Library">
@@ -48,12 +48,12 @@
 <arguments>
 <arg>${Image_Path}</arg>
 </arguments>
-<msg timestamp="20180501 11:19:52.216" level="INFO">Current page contains image 'xpath=//*[@id="n2-ss-6"]/div[1]/div/div/div[1]/div[1]/img'.</msg>
-<status status="PASS" endtime="20180501 11:19:52.216" starttime="20180501 11:19:52.200"></status>
+<msg timestamp="20180501 19:03:29.276" level="INFO">Current page contains image 'xpath=//*[@id="n2-ss-6"]/div[1]/div/div/div[1]/div[1]/img'.</msg>
+<status status="PASS" endtime="20180501 19:03:29.276" starttime="20180501 19:03:29.245"></status>
 </kw>
-<status status="PASS" endtime="20180501 11:19:52.216" starttime="20180501 11:19:52.199"></status>
+<status status="PASS" endtime="20180501 19:03:29.276" starttime="20180501 19:03:29.245"></status>
 </kw>
-<status status="PASS" endtime="20180501 11:19:52.216" starttime="20180501 11:19:27.974"></status>
+<status status="PASS" endtime="20180501 19:03:29.276" starttime="20180501 19:03:07.265"></status>
 </kw>
 <kw name="Go To My Account Page" library="TopNav">
 <kw name="Click Link" library="Selenium2Library">
@@ -61,10 +61,10 @@
 <arguments>
 <arg>${Link_Account_Locator}</arg>
 </arguments>
-<msg timestamp="20180501 11:19:52.217" level="INFO">Clicking link 'xpath=//*[@id="menu-item-50"]/a'.</msg>
-<status status="PASS" endtime="20180501 11:19:57.458" starttime="20180501 11:19:52.217"></status>
+<msg timestamp="20180501 19:03:29.292" level="INFO">Clicking link 'xpath=//*[@id="menu-item-50"]/a'.</msg>
+<status status="PASS" endtime="20180501 19:03:39.995" starttime="20180501 19:03:29.292"></status>
 </kw>
-<status status="PASS" endtime="20180501 11:19:57.459" starttime="20180501 11:19:52.217"></status>
+<status status="PASS" endtime="20180501 19:03:39.995" starttime="20180501 19:03:29.276"></status>
 </kw>
 <kw name="Verify Page Loaded" library="Register">
 <kw name="Wait Until Page Contains" library="Selenium2Library">
@@ -72,17 +72,82 @@
 <arguments>
 <arg>${REGISTER_TEXT}</arg>
 </arguments>
-<kw name="Capture Page Screenshot" library="Selenium2Library">
-<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
-<msg timestamp="20180501 11:20:02.909" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" endtime="20180501 11:20:02.910" starttime="20180501 11:20:02.641"></status>
+<status status="PASS" endtime="20180501 19:03:40.042" starttime="20180501 19:03:39.995"></status>
 </kw>
-<msg timestamp="20180501 11:20:02.912" level="FAIL">Text 'Register' did not appear in 5 seconds</msg>
-<status status="FAIL" endtime="20180501 11:20:02.912" starttime="20180501 11:19:57.461"></status>
+<status status="PASS" endtime="20180501 19:03:40.042" starttime="20180501 19:03:39.995"></status>
 </kw>
-<status status="FAIL" endtime="20180501 11:20:02.913" starttime="20180501 11:19:57.461"></status>
+<kw name="Fill Register Fields and Submit" library="Register">
+<arguments>
+<arg>${UserData}</arg>
+</arguments>
+<kw name="Run Keyword Unless" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments, if ``condition`` is false.</doc>
+<arguments>
+<arg>'${UserData.Email}' == '#BLANK'</arg>
+<arg>Fill Email Field</arg>
+<arg>${UserData.Email}</arg>
+</arguments>
+<kw name="Fill Email Field" library="Register">
+<arguments>
+<arg>${UserData.Email}</arg>
+</arguments>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>${REGISTER_EMAIL_INPUT}</arg>
+<arg>${Email}</arg>
+</arguments>
+<msg timestamp="20180501 19:03:40.057" level="INFO">Typing text 'test@be' into text field 'xpath=//input[@id='reg_email']'</msg>
+<status status="PASS" endtime="20180501 19:03:40.214" starttime="20180501 19:03:40.057"></status>
 </kw>
-<status status="FAIL" endtime="20180501 11:20:02.913" starttime="20180501 11:19:27.973"></status>
+<status status="PASS" endtime="20180501 19:03:40.214" starttime="20180501 19:03:40.057"></status>
+</kw>
+<status status="PASS" endtime="20180501 19:03:40.214" starttime="20180501 19:03:40.042"></status>
+</kw>
+<kw name="Run Keyword Unless" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments, if ``condition`` is false.</doc>
+<arguments>
+<arg>'${UserData.Password}' == '#BLANK'</arg>
+<arg>Fill Password Field</arg>
+<arg>${UserData.Password}</arg>
+</arguments>
+<status status="PASS" endtime="20180501 19:03:40.214" starttime="20180501 19:03:40.214"></status>
+</kw>
+<kw name="Click Register Button" library="Register">
+<kw name="Click Button" library="Selenium2Library">
+<doc>Clicks a button identified by `locator`.</doc>
+<arguments>
+<arg>${REGISTER_SUBMIT_BUTTON}</arg>
+</arguments>
+<msg timestamp="20180501 19:03:40.214" level="INFO">Clicking button 'name=register'.</msg>
+<status status="PASS" endtime="20180501 19:03:52.236" starttime="20180501 19:03:40.214"></status>
+</kw>
+<status status="PASS" endtime="20180501 19:03:52.236" starttime="20180501 19:03:40.214"></status>
+</kw>
+<status status="PASS" endtime="20180501 19:03:52.236" starttime="20180501 19:03:40.042"></status>
+</kw>
+<kw name="Verify Error Message" library="Register">
+<arguments>
+<arg>${UserData.ExpectedErrorMessage}</arg>
+</arguments>
+<kw name="Wait Until Page Contains" library="Selenium2Library">
+<doc>Waits until `text` appears on current page.</doc>
+<arguments>
+<arg>${ErrorMessage}</arg>
+</arguments>
+<status status="PASS" endtime="20180501 19:03:52.314" starttime="20180501 19:03:52.252"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5s</arg>
+</arguments>
+<msg timestamp="20180501 19:03:57.314" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" endtime="20180501 19:03:57.314" starttime="20180501 19:03:52.314"></status>
+</kw>
+<status status="PASS" endtime="20180501 19:03:57.314" starttime="20180501 19:03:52.236"></status>
+</kw>
+<status status="PASS" endtime="20180501 19:03:57.314" starttime="20180501 19:03:07.265"></status>
 </kw>
 <kw name="Test Multiple Register Scenarios" library="MyAccountPageApp">
 <arguments>
@@ -95,18 +160,18 @@
 <arguments>
 <arg>${BASE_URL}</arg>
 </arguments>
-<msg timestamp="20180501 11:20:02.916" level="INFO">Opening url 'http://practice.automationtesting.in/'</msg>
-<status status="PASS" endtime="20180501 11:20:43.364" starttime="20180501 11:20:02.915"></status>
+<msg timestamp="20180501 19:03:57.314" level="INFO">Opening url 'http://practice.automationtesting.in/'</msg>
+<status status="PASS" endtime="20180501 19:04:16.408" starttime="20180501 19:03:57.314"></status>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>2s</arg>
 </arguments>
-<msg timestamp="20180501 11:20:45.366" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" endtime="20180501 11:20:45.366" starttime="20180501 11:20:43.364"></status>
+<msg timestamp="20180501 19:04:18.424" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" endtime="20180501 19:04:18.424" starttime="20180501 19:04:16.408"></status>
 </kw>
-<status status="PASS" endtime="20180501 11:20:45.366" starttime="20180501 11:20:02.915"></status>
+<status status="PASS" endtime="20180501 19:04:18.424" starttime="20180501 19:03:57.314"></status>
 </kw>
 <kw name="Verify Landing Page Loaded" library="LandingPage">
 <kw name="Page Should Contain Image" library="Selenium2Library">
@@ -114,23 +179,91 @@
 <arguments>
 <arg>${Image_Path}</arg>
 </arguments>
-<kw name="Capture Page Screenshot" library="Selenium2Library">
-<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
-<msg timestamp="20180501 11:20:46.397" level="FAIL">SessionNotCreatedException: Message: Tried to run command without establishing a connection
-</msg>
-<status status="FAIL" endtime="20180501 11:20:46.397" starttime="20180501 11:20:46.390"></status>
+<msg timestamp="20180501 19:04:18.455" level="INFO">Current page contains image 'xpath=//*[@id="n2-ss-6"]/div[1]/div/div/div[1]/div[1]/img'.</msg>
+<status status="PASS" endtime="20180501 19:04:18.455" starttime="20180501 19:04:18.424"></status>
 </kw>
-<msg timestamp="20180501 11:20:46.397" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: SessionNotCreatedException: Message: Tried to run command without establishing a connection
-</msg>
-<msg timestamp="20180501 11:20:46.401" level="FAIL">WebDriverException: Message: Failed to decode response from marionette
-</msg>
-<status status="FAIL" endtime="20180501 11:20:46.401" starttime="20180501 11:20:45.367"></status>
+<status status="PASS" endtime="20180501 19:04:18.455" starttime="20180501 19:04:18.424"></status>
 </kw>
-<status status="FAIL" endtime="20180501 11:20:46.401" starttime="20180501 11:20:45.366"></status>
+<status status="PASS" endtime="20180501 19:04:18.455" starttime="20180501 19:03:57.314"></status>
 </kw>
-<status status="FAIL" endtime="20180501 11:20:46.401" starttime="20180501 11:20:02.915"></status>
+<kw name="Go To My Account Page" library="TopNav">
+<kw name="Click Link" library="Selenium2Library">
+<doc>Clicks a link identified by locator.</doc>
+<arguments>
+<arg>${Link_Account_Locator}</arg>
+</arguments>
+<msg timestamp="20180501 19:04:18.455" level="INFO">Clicking link 'xpath=//*[@id="menu-item-50"]/a'.</msg>
+<status status="PASS" endtime="20180501 19:04:24.734" starttime="20180501 19:04:18.455"></status>
 </kw>
-<status status="FAIL" endtime="20180501 11:20:46.401" starttime="20180501 11:20:02.914"></status>
+<status status="PASS" endtime="20180501 19:04:24.735" starttime="20180501 19:04:18.455"></status>
+</kw>
+<kw name="Verify Page Loaded" library="Register">
+<kw name="Wait Until Page Contains" library="Selenium2Library">
+<doc>Waits until `text` appears on current page.</doc>
+<arguments>
+<arg>${REGISTER_TEXT}</arg>
+</arguments>
+<status status="PASS" endtime="20180501 19:04:24.764" starttime="20180501 19:04:24.736"></status>
+</kw>
+<status status="PASS" endtime="20180501 19:04:24.764" starttime="20180501 19:04:24.735"></status>
+</kw>
+<kw name="Fill Register Fields and Submit" library="Register">
+<arguments>
+<arg>${UserData}</arg>
+</arguments>
+<kw name="Run Keyword Unless" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments, if ``condition`` is false.</doc>
+<arguments>
+<arg>'${UserData.Email}' == '#BLANK'</arg>
+<arg>Fill Email Field</arg>
+<arg>${UserData.Email}</arg>
+</arguments>
+<status status="PASS" endtime="20180501 19:04:24.766" starttime="20180501 19:04:24.766"></status>
+</kw>
+<kw name="Run Keyword Unless" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments, if ``condition`` is false.</doc>
+<arguments>
+<arg>'${UserData.Password}' == '#BLANK'</arg>
+<arg>Fill Password Field</arg>
+<arg>${UserData.Password}</arg>
+</arguments>
+<status status="PASS" endtime="20180501 19:04:24.768" starttime="20180501 19:04:24.767"></status>
+</kw>
+<kw name="Click Register Button" library="Register">
+<kw name="Click Button" library="Selenium2Library">
+<doc>Clicks a button identified by `locator`.</doc>
+<arguments>
+<arg>${REGISTER_SUBMIT_BUTTON}</arg>
+</arguments>
+<msg timestamp="20180501 19:04:24.769" level="INFO">Clicking button 'name=register'.</msg>
+<status status="PASS" endtime="20180501 19:04:31.539" starttime="20180501 19:04:24.769"></status>
+</kw>
+<status status="PASS" endtime="20180501 19:04:31.540" starttime="20180501 19:04:24.768"></status>
+</kw>
+<status status="PASS" endtime="20180501 19:04:31.540" starttime="20180501 19:04:24.765"></status>
+</kw>
+<kw name="Verify Error Message" library="Register">
+<arguments>
+<arg>${UserData.ExpectedErrorMessage}</arg>
+</arguments>
+<kw name="Wait Until Page Contains" library="Selenium2Library">
+<doc>Waits until `text` appears on current page.</doc>
+<arguments>
+<arg>${ErrorMessage}</arg>
+</arguments>
+<status status="PASS" endtime="20180501 19:04:31.574" starttime="20180501 19:04:31.542"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5s</arg>
+</arguments>
+<msg timestamp="20180501 19:04:36.580" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" endtime="20180501 19:04:36.580" starttime="20180501 19:04:31.574"></status>
+</kw>
+<status status="PASS" endtime="20180501 19:04:36.580" starttime="20180501 19:04:31.540"></status>
+</kw>
+<status status="PASS" endtime="20180501 19:04:36.580" starttime="20180501 19:03:57.314"></status>
 </kw>
 <kw name="Test Multiple Register Scenarios" library="MyAccountPageApp">
 <arguments>
@@ -143,24 +276,125 @@
 <arguments>
 <arg>${BASE_URL}</arg>
 </arguments>
-<msg timestamp="20180501 11:20:46.404" level="INFO">Opening url 'http://practice.automationtesting.in/'</msg>
-<kw name="Capture Page Screenshot" library="Selenium2Library">
-<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
-<msg timestamp="20180501 11:20:46.413" level="FAIL">SessionNotCreatedException: Message: Tried to run command without establishing a connection
-</msg>
-<status status="FAIL" endtime="20180501 11:20:46.413" starttime="20180501 11:20:46.406"></status>
+<msg timestamp="20180501 19:04:36.580" level="INFO">Opening url 'http://practice.automationtesting.in/'</msg>
+<status status="PASS" endtime="20180501 19:04:43.259" starttime="20180501 19:04:36.580"></status>
 </kw>
-<msg timestamp="20180501 11:20:46.413" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: SessionNotCreatedException: Message: Tried to run command without establishing a connection
-</msg>
-<msg timestamp="20180501 11:20:46.416" level="FAIL">SessionNotCreatedException: Message: Tried to run command without establishing a connection
-</msg>
-<status status="FAIL" endtime="20180501 11:20:46.416" starttime="20180501 11:20:46.403"></status>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2s</arg>
+</arguments>
+<msg timestamp="20180501 19:04:45.261" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" endtime="20180501 19:04:45.261" starttime="20180501 19:04:43.259"></status>
 </kw>
-<status status="FAIL" endtime="20180501 11:20:46.417" starttime="20180501 11:20:46.403"></status>
+<status status="PASS" endtime="20180501 19:04:45.261" starttime="20180501 19:04:36.580"></status>
 </kw>
-<status status="FAIL" endtime="20180501 11:20:46.417" starttime="20180501 11:20:46.403"></status>
+<kw name="Verify Landing Page Loaded" library="LandingPage">
+<kw name="Page Should Contain Image" library="Selenium2Library">
+<doc>Verifies image identified by `locator` is found from current page.</doc>
+<arguments>
+<arg>${Image_Path}</arg>
+</arguments>
+<msg timestamp="20180501 19:04:45.354" level="INFO">Current page contains image 'xpath=//*[@id="n2-ss-6"]/div[1]/div/div/div[1]/div[1]/img'.</msg>
+<status status="PASS" endtime="20180501 19:04:45.354" starttime="20180501 19:04:45.261"></status>
 </kw>
-<status status="FAIL" endtime="20180501 11:20:46.417" starttime="20180501 11:20:46.402"></status>
+<status status="PASS" endtime="20180501 19:04:45.354" starttime="20180501 19:04:45.261"></status>
+</kw>
+<status status="PASS" endtime="20180501 19:04:45.354" starttime="20180501 19:04:36.580"></status>
+</kw>
+<kw name="Go To My Account Page" library="TopNav">
+<kw name="Click Link" library="Selenium2Library">
+<doc>Clicks a link identified by locator.</doc>
+<arguments>
+<arg>${Link_Account_Locator}</arg>
+</arguments>
+<msg timestamp="20180501 19:04:45.354" level="INFO">Clicking link 'xpath=//*[@id="menu-item-50"]/a'.</msg>
+<status status="PASS" endtime="20180501 19:04:57.230" starttime="20180501 19:04:45.354"></status>
+</kw>
+<status status="PASS" endtime="20180501 19:04:57.230" starttime="20180501 19:04:45.354"></status>
+</kw>
+<kw name="Verify Page Loaded" library="Register">
+<kw name="Wait Until Page Contains" library="Selenium2Library">
+<doc>Waits until `text` appears on current page.</doc>
+<arguments>
+<arg>${REGISTER_TEXT}</arg>
+</arguments>
+<status status="PASS" endtime="20180501 19:04:57.323" starttime="20180501 19:04:57.245"></status>
+</kw>
+<status status="PASS" endtime="20180501 19:04:57.323" starttime="20180501 19:04:57.230"></status>
+</kw>
+<kw name="Fill Register Fields and Submit" library="Register">
+<arguments>
+<arg>${UserData}</arg>
+</arguments>
+<kw name="Run Keyword Unless" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments, if ``condition`` is false.</doc>
+<arguments>
+<arg>'${UserData.Email}' == '#BLANK'</arg>
+<arg>Fill Email Field</arg>
+<arg>${UserData.Email}</arg>
+</arguments>
+<kw name="Fill Email Field" library="Register">
+<arguments>
+<arg>${UserData.Email}</arg>
+</arguments>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>${REGISTER_EMAIL_INPUT}</arg>
+<arg>${Email}</arg>
+</arguments>
+<msg timestamp="20180501 19:04:57.323" level="INFO">Typing text 'test@test.com.br' into text field 'xpath=//input[@id='reg_email']'</msg>
+<status status="PASS" endtime="20180501 19:04:57.526" starttime="20180501 19:04:57.323"></status>
+</kw>
+<status status="PASS" endtime="20180501 19:04:57.526" starttime="20180501 19:04:57.323"></status>
+</kw>
+<status status="PASS" endtime="20180501 19:04:57.542" starttime="20180501 19:04:57.323"></status>
+</kw>
+<kw name="Run Keyword Unless" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments, if ``condition`` is false.</doc>
+<arguments>
+<arg>'${UserData.Password}' == '#BLANK'</arg>
+<arg>Fill Password Field</arg>
+<arg>${UserData.Password}</arg>
+</arguments>
+<status status="PASS" endtime="20180501 19:04:57.542" starttime="20180501 19:04:57.542"></status>
+</kw>
+<kw name="Click Register Button" library="Register">
+<kw name="Click Button" library="Selenium2Library">
+<doc>Clicks a button identified by `locator`.</doc>
+<arguments>
+<arg>${REGISTER_SUBMIT_BUTTON}</arg>
+</arguments>
+<msg timestamp="20180501 19:04:57.558" level="INFO">Clicking button 'name=register'.</msg>
+<status status="PASS" endtime="20180501 19:05:02.003" starttime="20180501 19:04:57.558"></status>
+</kw>
+<status status="PASS" endtime="20180501 19:05:02.004" starttime="20180501 19:04:57.558"></status>
+</kw>
+<status status="PASS" endtime="20180501 19:05:02.004" starttime="20180501 19:04:57.323"></status>
+</kw>
+<kw name="Verify Error Message" library="Register">
+<arguments>
+<arg>${UserData.ExpectedErrorMessage}</arg>
+</arguments>
+<kw name="Wait Until Page Contains" library="Selenium2Library">
+<doc>Waits until `text` appears on current page.</doc>
+<arguments>
+<arg>${ErrorMessage}</arg>
+</arguments>
+<status status="PASS" endtime="20180501 19:05:02.030" starttime="20180501 19:05:02.006"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5s</arg>
+</arguments>
+<msg timestamp="20180501 19:05:07.035" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" endtime="20180501 19:05:07.035" starttime="20180501 19:05:02.030"></status>
+</kw>
+<status status="PASS" endtime="20180501 19:05:07.035" starttime="20180501 19:05:02.004"></status>
+</kw>
+<status status="PASS" endtime="20180501 19:05:07.035" starttime="20180501 19:04:36.580"></status>
 </kw>
 <kw name="Test Multiple Register Scenarios" library="MyAccountPageApp">
 <arguments>
@@ -173,24 +407,110 @@
 <arguments>
 <arg>${BASE_URL}</arg>
 </arguments>
-<msg timestamp="20180501 11:20:46.422" level="INFO">Opening url 'http://practice.automationtesting.in/'</msg>
-<kw name="Capture Page Screenshot" library="Selenium2Library">
-<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
-<msg timestamp="20180501 11:20:46.430" level="FAIL">SessionNotCreatedException: Message: Tried to run command without establishing a connection
-</msg>
-<status status="FAIL" endtime="20180501 11:20:46.430" starttime="20180501 11:20:46.424"></status>
+<msg timestamp="20180501 19:05:07.035" level="INFO">Opening url 'http://practice.automationtesting.in/'</msg>
+<status status="PASS" endtime="20180501 19:05:11.538" starttime="20180501 19:05:07.035"></status>
 </kw>
-<msg timestamp="20180501 11:20:46.430" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: SessionNotCreatedException: Message: Tried to run command without establishing a connection
-</msg>
-<msg timestamp="20180501 11:20:46.432" level="FAIL">SessionNotCreatedException: Message: Tried to run command without establishing a connection
-</msg>
-<status status="FAIL" endtime="20180501 11:20:46.432" starttime="20180501 11:20:46.421"></status>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2s</arg>
+</arguments>
+<msg timestamp="20180501 19:05:13.539" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" endtime="20180501 19:05:13.539" starttime="20180501 19:05:11.539"></status>
 </kw>
-<status status="FAIL" endtime="20180501 11:20:46.432" starttime="20180501 11:20:46.420"></status>
+<status status="PASS" endtime="20180501 19:05:13.539" starttime="20180501 19:05:07.035"></status>
 </kw>
-<status status="FAIL" endtime="20180501 11:20:46.433" starttime="20180501 11:20:46.419"></status>
+<kw name="Verify Landing Page Loaded" library="LandingPage">
+<kw name="Page Should Contain Image" library="Selenium2Library">
+<doc>Verifies image identified by `locator` is found from current page.</doc>
+<arguments>
+<arg>${Image_Path}</arg>
+</arguments>
+<msg timestamp="20180501 19:05:13.582" level="INFO">Current page contains image 'xpath=//*[@id="n2-ss-6"]/div[1]/div/div/div[1]/div[1]/img'.</msg>
+<status status="PASS" endtime="20180501 19:05:13.582" starttime="20180501 19:05:13.540"></status>
 </kw>
-<status status="FAIL" endtime="20180501 11:20:46.433" starttime="20180501 11:20:46.418"></status>
+<status status="PASS" endtime="20180501 19:05:13.582" starttime="20180501 19:05:13.539"></status>
+</kw>
+<status status="PASS" endtime="20180501 19:05:13.582" starttime="20180501 19:05:07.035"></status>
+</kw>
+<kw name="Go To My Account Page" library="TopNav">
+<kw name="Click Link" library="Selenium2Library">
+<doc>Clicks a link identified by locator.</doc>
+<arguments>
+<arg>${Link_Account_Locator}</arg>
+</arguments>
+<msg timestamp="20180501 19:05:13.584" level="INFO">Clicking link 'xpath=//*[@id="menu-item-50"]/a'.</msg>
+<status status="PASS" endtime="20180501 19:05:20.003" starttime="20180501 19:05:13.583"></status>
+</kw>
+<status status="PASS" endtime="20180501 19:05:20.003" starttime="20180501 19:05:13.583"></status>
+</kw>
+<kw name="Verify Page Loaded" library="Register">
+<kw name="Wait Until Page Contains" library="Selenium2Library">
+<doc>Waits until `text` appears on current page.</doc>
+<arguments>
+<arg>${REGISTER_TEXT}</arg>
+</arguments>
+<status status="PASS" endtime="20180501 19:05:20.034" starttime="20180501 19:05:20.003"></status>
+</kw>
+<status status="PASS" endtime="20180501 19:05:20.034" starttime="20180501 19:05:20.003"></status>
+</kw>
+<kw name="Fill Register Fields and Submit" library="Register">
+<arguments>
+<arg>${UserData}</arg>
+</arguments>
+<kw name="Run Keyword Unless" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments, if ``condition`` is false.</doc>
+<arguments>
+<arg>'${UserData.Email}' == '#BLANK'</arg>
+<arg>Fill Email Field</arg>
+<arg>${UserData.Email}</arg>
+</arguments>
+<status status="PASS" endtime="20180501 19:05:20.034" starttime="20180501 19:05:20.034"></status>
+</kw>
+<kw name="Run Keyword Unless" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments, if ``condition`` is false.</doc>
+<arguments>
+<arg>'${UserData.Password}' == '#BLANK'</arg>
+<arg>Fill Password Field</arg>
+<arg>${UserData.Password}</arg>
+</arguments>
+<status status="PASS" endtime="20180501 19:05:20.034" starttime="20180501 19:05:20.034"></status>
+</kw>
+<kw name="Click Register Button" library="Register">
+<kw name="Click Button" library="Selenium2Library">
+<doc>Clicks a button identified by `locator`.</doc>
+<arguments>
+<arg>${REGISTER_SUBMIT_BUTTON}</arg>
+</arguments>
+<msg timestamp="20180501 19:05:20.050" level="INFO">Clicking button 'name=register'.</msg>
+<status status="PASS" endtime="20180501 19:05:22.847" starttime="20180501 19:05:20.034"></status>
+</kw>
+<status status="PASS" endtime="20180501 19:05:22.847" starttime="20180501 19:05:20.034"></status>
+</kw>
+<status status="PASS" endtime="20180501 19:05:22.847" starttime="20180501 19:05:20.034"></status>
+</kw>
+<kw name="Verify Error Message" library="Register">
+<arguments>
+<arg>${UserData.ExpectedErrorMessage}</arg>
+</arguments>
+<kw name="Wait Until Page Contains" library="Selenium2Library">
+<doc>Waits until `text` appears on current page.</doc>
+<arguments>
+<arg>${ErrorMessage}</arg>
+</arguments>
+<status status="PASS" endtime="20180501 19:05:22.941" starttime="20180501 19:05:22.847"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5s</arg>
+</arguments>
+<msg timestamp="20180501 19:05:27.941" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" endtime="20180501 19:05:27.941" starttime="20180501 19:05:22.941"></status>
+</kw>
+<status status="PASS" endtime="20180501 19:05:27.941" starttime="20180501 19:05:22.847"></status>
+</kw>
+<status status="PASS" endtime="20180501 19:05:27.941" starttime="20180501 19:05:07.035"></status>
 </kw>
 <kw name="Test Multiple Register Scenarios" library="MyAccountPageApp">
 <arguments>
@@ -203,62 +523,134 @@
 <arguments>
 <arg>${BASE_URL}</arg>
 </arguments>
-<msg timestamp="20180501 11:20:46.435" level="INFO">Opening url 'http://practice.automationtesting.in/'</msg>
-<kw name="Capture Page Screenshot" library="Selenium2Library">
-<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
-<msg timestamp="20180501 11:20:46.446" level="FAIL">SessionNotCreatedException: Message: Tried to run command without establishing a connection
-</msg>
-<status status="FAIL" endtime="20180501 11:20:46.446" starttime="20180501 11:20:46.438"></status>
+<msg timestamp="20180501 19:05:27.941" level="INFO">Opening url 'http://practice.automationtesting.in/'</msg>
+<status status="PASS" endtime="20180501 19:05:31.753" starttime="20180501 19:05:27.941"></status>
 </kw>
-<msg timestamp="20180501 11:20:46.446" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: SessionNotCreatedException: Message: Tried to run command without establishing a connection
-</msg>
-<msg timestamp="20180501 11:20:46.449" level="FAIL">SessionNotCreatedException: Message: Tried to run command without establishing a connection
-</msg>
-<status status="FAIL" endtime="20180501 11:20:46.450" starttime="20180501 11:20:46.435"></status>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2s</arg>
+</arguments>
+<msg timestamp="20180501 19:05:33.753" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" endtime="20180501 19:05:33.753" starttime="20180501 19:05:31.753"></status>
 </kw>
-<status status="FAIL" endtime="20180501 11:20:46.450" starttime="20180501 11:20:46.435"></status>
+<status status="PASS" endtime="20180501 19:05:33.753" starttime="20180501 19:05:27.941"></status>
 </kw>
-<status status="FAIL" endtime="20180501 11:20:46.451" starttime="20180501 11:20:46.434"></status>
+<kw name="Verify Landing Page Loaded" library="LandingPage">
+<kw name="Page Should Contain Image" library="Selenium2Library">
+<doc>Verifies image identified by `locator` is found from current page.</doc>
+<arguments>
+<arg>${Image_Path}</arg>
+</arguments>
+<msg timestamp="20180501 19:05:33.831" level="INFO">Current page contains image 'xpath=//*[@id="n2-ss-6"]/div[1]/div/div/div[1]/div[1]/img'.</msg>
+<status status="PASS" endtime="20180501 19:05:33.831" starttime="20180501 19:05:33.753"></status>
 </kw>
-<status status="FAIL" endtime="20180501 11:20:46.451" starttime="20180501 11:20:46.433"></status>
+<status status="PASS" endtime="20180501 19:05:33.831" starttime="20180501 19:05:33.753"></status>
+</kw>
+<status status="PASS" endtime="20180501 19:05:33.831" starttime="20180501 19:05:27.941"></status>
+</kw>
+<kw name="Go To My Account Page" library="TopNav">
+<kw name="Click Link" library="Selenium2Library">
+<doc>Clicks a link identified by locator.</doc>
+<arguments>
+<arg>${Link_Account_Locator}</arg>
+</arguments>
+<msg timestamp="20180501 19:05:33.831" level="INFO">Clicking link 'xpath=//*[@id="menu-item-50"]/a'.</msg>
+<status status="PASS" endtime="20180501 19:05:37.574" starttime="20180501 19:05:33.831"></status>
+</kw>
+<status status="PASS" endtime="20180501 19:05:37.574" starttime="20180501 19:05:33.831"></status>
+</kw>
+<kw name="Verify Page Loaded" library="Register">
+<kw name="Wait Until Page Contains" library="Selenium2Library">
+<doc>Waits until `text` appears on current page.</doc>
+<arguments>
+<arg>${REGISTER_TEXT}</arg>
+</arguments>
+<status status="PASS" endtime="20180501 19:05:37.605" starttime="20180501 19:05:37.574"></status>
+</kw>
+<status status="PASS" endtime="20180501 19:05:37.605" starttime="20180501 19:05:37.574"></status>
+</kw>
+<kw name="Fill Register Fields and Submit" library="Register">
+<arguments>
+<arg>${UserData}</arg>
+</arguments>
+<kw name="Run Keyword Unless" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments, if ``condition`` is false.</doc>
+<arguments>
+<arg>'${UserData.Email}' == '#BLANK'</arg>
+<arg>Fill Email Field</arg>
+<arg>${UserData.Email}</arg>
+</arguments>
+<kw name="Fill Email Field" library="Register">
+<arguments>
+<arg>${UserData.Email}</arg>
+</arguments>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>${REGISTER_EMAIL_INPUT}</arg>
+<arg>${Email}</arg>
+</arguments>
+<msg timestamp="20180501 19:05:37.605" level="INFO">Typing text 'test@test.com' into text field 'xpath=//input[@id='reg_email']'</msg>
+<status status="PASS" endtime="20180501 19:05:37.777" starttime="20180501 19:05:37.605"></status>
+</kw>
+<status status="PASS" endtime="20180501 19:05:37.777" starttime="20180501 19:05:37.605"></status>
+</kw>
+<status status="PASS" endtime="20180501 19:05:37.777" starttime="20180501 19:05:37.605"></status>
+</kw>
+<kw name="Run Keyword Unless" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments, if ``condition`` is false.</doc>
+<arguments>
+<arg>'${UserData.Password}' == '#BLANK'</arg>
+<arg>Fill Password Field</arg>
+<arg>${UserData.Password}</arg>
+</arguments>
+<status status="PASS" endtime="20180501 19:05:37.777" starttime="20180501 19:05:37.777"></status>
+</kw>
+<kw name="Click Register Button" library="Register">
+<kw name="Click Button" library="Selenium2Library">
+<doc>Clicks a button identified by `locator`.</doc>
+<arguments>
+<arg>${REGISTER_SUBMIT_BUTTON}</arg>
+</arguments>
+<msg timestamp="20180501 19:05:37.777" level="INFO">Clicking button 'name=register'.</msg>
+<status status="PASS" endtime="20180501 19:05:40.949" starttime="20180501 19:05:37.777"></status>
+</kw>
+<status status="PASS" endtime="20180501 19:05:40.949" starttime="20180501 19:05:37.777"></status>
+</kw>
+<status status="PASS" endtime="20180501 19:05:40.949" starttime="20180501 19:05:37.605"></status>
+</kw>
+<kw name="Verify Error Message" library="Register">
+<arguments>
+<arg>${UserData.ExpectedErrorMessage}</arg>
+</arguments>
+<kw name="Wait Until Page Contains" library="Selenium2Library">
+<doc>Waits until `text` appears on current page.</doc>
+<arguments>
+<arg>${ErrorMessage}</arg>
+</arguments>
+<status status="PASS" endtime="20180501 19:05:41.027" starttime="20180501 19:05:40.949"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5s</arg>
+</arguments>
+<msg timestamp="20180501 19:05:46.027" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" endtime="20180501 19:05:46.027" starttime="20180501 19:05:41.027"></status>
+</kw>
+<status status="PASS" endtime="20180501 19:05:46.027" starttime="20180501 19:05:40.949"></status>
+</kw>
+<status status="PASS" endtime="20180501 19:05:46.027" starttime="20180501 19:05:27.941"></status>
 </kw>
 <kw type="teardown" name="End Web Test" library="Commom">
 <kw name="Close All Browsers" library="Selenium2Library">
 <doc>Closes all open browsers and resets the browser cache.</doc>
-<kw name="Capture Page Screenshot" library="Selenium2Library">
-<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
-<msg timestamp="20180501 11:20:46.464" level="FAIL">SessionNotCreatedException: Message: Tried to run command without establishing a connection
-</msg>
-<status status="FAIL" endtime="20180501 11:20:46.464" starttime="20180501 11:20:46.456"></status>
+<status status="PASS" endtime="20180501 19:05:51.713" starttime="20180501 19:05:46.027"></status>
 </kw>
-<msg timestamp="20180501 11:20:46.464" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: SessionNotCreatedException: Message: Tried to run command without establishing a connection
-</msg>
-<msg timestamp="20180501 11:20:46.469" level="FAIL">SessionNotCreatedException: Message: Tried to run command without establishing a connection
-</msg>
-<status status="FAIL" endtime="20180501 11:20:46.469" starttime="20180501 11:20:46.453"></status>
+<status status="PASS" endtime="20180501 19:05:51.713" starttime="20180501 19:05:46.027"></status>
 </kw>
-<status status="FAIL" endtime="20180501 11:20:46.470" starttime="20180501 11:20:46.452">SessionNotCreatedException: Message: Tried to run command without establishing a connection
-</status>
-</kw>
-<status status="FAIL" endtime="20180501 11:20:46.470" critical="yes" starttime="20180501 11:19:15.466">Several failures occurred:
-
-1) Text 'Register' did not appear in 5 seconds
-
-2) WebDriverException: Message: Failed to decode response from marionette
-
-
-3) SessionNotCreatedException: Message: Tried to run command without establishing a connection
-
-
-4) SessionNotCreatedException: Message: Tried to run command without establishing a connection
-
-
-5) SessionNotCreatedException: Message: Tried to run command without establishing a connection
-
-
-Also teardown failed:
-SessionNotCreatedException: Message: Tried to run command without establishing a connection
-</status>
+<status status="PASS" endtime="20180501 19:05:51.713" critical="yes" starttime="20180501 19:02:37.585"></status>
 </test>
 <test id="s1-t2" name="Invalid Login Scenarios Should Display Correct Error Message">
 <kw type="setup" name="Start Web Test" library="Commom">
@@ -268,50 +660,147 @@ SessionNotCreatedException: Message: Tried to run command without establishing a
 <arg>about:blank</arg>
 <arg>${BROWSER}</arg>
 </arguments>
-<msg timestamp="20180501 11:20:46.475" level="INFO">Opening browser 'ff' to base url 'about:blank'</msg>
-<kw name="Capture Page Screenshot" library="Selenium2Library">
-<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
-<status status="FAIL" endtime="20180501 11:20:48.520" starttime="20180501 11:20:48.519"></status>
+<msg timestamp="20180501 19:05:51.729" level="INFO">Opening browser 'ff' to base url 'about:blank'</msg>
+<status status="PASS" endtime="20180501 19:06:04.979" starttime="20180501 19:05:51.729"></status>
 </kw>
-<msg timestamp="20180501 11:20:48.520" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Execution terminated by signal</msg>
-<status status="FAIL" endtime="20180501 11:20:48.522" starttime="20180501 11:20:46.474"></status>
+<kw name="Maximize Browser Window" library="Selenium2Library">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" endtime="20180501 19:06:08.620" starttime="20180501 19:06:04.979"></status>
 </kw>
-<status status="FAIL" endtime="20180501 11:20:48.523" starttime="20180501 11:20:46.474"></status>
+<status status="PASS" endtime="20180501 19:06:08.620" starttime="20180501 19:05:51.729"></status>
+</kw>
+<kw name="Test Multiple Login Scenarios" library="MyAccountPageApp">
+<arguments>
+<arg>${LOGIN_INVALID_USER}</arg>
+</arguments>
+<kw name="Page Loaded" library="LandingPage">
+<kw name="Open Landing Page" library="LandingPage">
+<kw name="Go To" library="Selenium2Library">
+<doc>Navigates the active browser instance to the provided URL.</doc>
+<arguments>
+<arg>${BASE_URL}</arg>
+</arguments>
+<msg timestamp="20180501 19:06:08.635" level="INFO">Opening url 'http://practice.automationtesting.in/'</msg>
+<status status="PASS" endtime="20180501 19:06:27.010" starttime="20180501 19:06:08.635"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2s</arg>
+</arguments>
+<msg timestamp="20180501 19:06:29.010" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" endtime="20180501 19:06:29.010" starttime="20180501 19:06:27.010"></status>
+</kw>
+<status status="PASS" endtime="20180501 19:06:29.010" starttime="20180501 19:06:08.635"></status>
+</kw>
+<kw name="Verify Landing Page Loaded" library="LandingPage">
+<kw name="Page Should Contain Image" library="Selenium2Library">
+<doc>Verifies image identified by `locator` is found from current page.</doc>
+<arguments>
+<arg>${Image_Path}</arg>
+</arguments>
+<msg timestamp="20180501 19:06:29.025" level="INFO">Current page contains image 'xpath=//*[@id="n2-ss-6"]/div[1]/div/div/div[1]/div[1]/img'.</msg>
+<status status="PASS" endtime="20180501 19:06:29.025" starttime="20180501 19:06:29.010"></status>
+</kw>
+<status status="PASS" endtime="20180501 19:06:29.025" starttime="20180501 19:06:29.010"></status>
+</kw>
+<status status="PASS" endtime="20180501 19:06:29.025" starttime="20180501 19:06:08.635"></status>
+</kw>
+<kw name="Go To My Account Page" library="TopNav">
+<kw name="Click Link" library="Selenium2Library">
+<doc>Clicks a link identified by locator.</doc>
+<arguments>
+<arg>${Link_Account_Locator}</arg>
+</arguments>
+<msg timestamp="20180501 19:06:29.025" level="INFO">Clicking link 'xpath=//*[@id="menu-item-50"]/a'.</msg>
+<status status="PASS" endtime="20180501 19:06:36.182" starttime="20180501 19:06:29.025"></status>
+</kw>
+<status status="PASS" endtime="20180501 19:06:36.182" starttime="20180501 19:06:29.025"></status>
+</kw>
+<kw name="Verify Page Loaded" library="Login">
+<kw name="Wait Until Page Contains" library="Selenium2Library">
+<doc>Waits until `text` appears on current page.</doc>
+<arguments>
+<arg>${LOGIN_TEXT}</arg>
+</arguments>
+<status status="PASS" endtime="20180501 19:06:36.244" starttime="20180501 19:06:36.182"></status>
+</kw>
+<status status="PASS" endtime="20180501 19:06:36.244" starttime="20180501 19:06:36.182"></status>
+</kw>
+<kw name="Fill Login Fields and Submit" library="Login">
+<arguments>
+<arg>${UserData}</arg>
+</arguments>
+<kw name="Run Keyword Unless" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments, if ``condition`` is false.</doc>
+<arguments>
+<arg>'${UserData.User}' == '#BLANK'</arg>
+<arg>Fill Username Field</arg>
+<arg>${UserData.User}</arg>
+</arguments>
+<kw name="Fill Username Field" library="Login">
+<arguments>
+<arg>${UserData.User}</arg>
+</arguments>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>${LOGIN_USERNAME_INPUT}</arg>
+<arg>${Username}</arg>
+</arguments>
+<msg timestamp="20180501 19:06:36.244" level="INFO">Typing text 'test987' into text field 'xpath=//input[@id='username']'</msg>
+<status status="PASS" endtime="20180501 19:06:36.307" starttime="20180501 19:06:36.244"></status>
+</kw>
+<status status="PASS" endtime="20180501 19:06:36.307" starttime="20180501 19:06:36.244"></status>
+</kw>
+<status status="PASS" endtime="20180501 19:06:36.307" starttime="20180501 19:06:36.244"></status>
+</kw>
+<kw name="Run Keyword Unless" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments, if ``condition`` is false.</doc>
+<arguments>
+<arg>'${UserData.Password}' == '#BLANK'</arg>
+<arg>Fill Password Field</arg>
+<arg>${UserData.Password}</arg>
+</arguments>
+<kw name="Fill Password Field">
+<arguments>
+<arg>${UserData.Password}</arg>
+</arguments>
+<msg timestamp="20180501 19:06:36.307" level="FAIL">Multiple keywords with name 'Fill Password Field' found. Give the full name of the keyword you want to use:
+    Login.Fill Password Field
+    Register.Fill Password Field</msg>
+<status status="FAIL" endtime="20180501 19:06:36.307" starttime="20180501 19:06:36.307"></status>
+</kw>
+<status status="FAIL" endtime="20180501 19:06:36.307" starttime="20180501 19:06:36.307"></status>
+</kw>
+<status status="FAIL" endtime="20180501 19:06:36.307" starttime="20180501 19:06:36.244"></status>
+</kw>
+<status status="FAIL" endtime="20180501 19:06:36.307" starttime="20180501 19:06:08.620"></status>
 </kw>
 <kw type="teardown" name="End Web Test" library="Commom">
 <kw name="Close All Browsers" library="Selenium2Library">
 <doc>Closes all open browsers and resets the browser cache.</doc>
-<status status="PASS" endtime="20180501 11:20:49.534" starttime="20180501 11:20:48.525"></status>
+<status status="PASS" endtime="20180501 19:06:39.869" starttime="20180501 19:06:36.307"></status>
 </kw>
-<status status="PASS" endtime="20180501 11:20:49.534" starttime="20180501 11:20:48.524"></status>
+<status status="PASS" endtime="20180501 19:06:39.869" starttime="20180501 19:06:36.307"></status>
 </kw>
-<status status="FAIL" endtime="20180501 11:20:49.535" critical="yes" starttime="20180501 11:20:46.472">Setup failed:
-Execution terminated by signal</status>
+<status status="FAIL" endtime="20180501 19:06:39.869" critical="yes" starttime="20180501 19:05:51.729">Multiple keywords with name 'Fill Password Field' found. Give the full name of the keyword you want to use:
+    Login.Fill Password Field
+    Register.Fill Password Field</status>
 </test>
-<status status="FAIL" endtime="20180501 11:20:49.538" starttime="20180501 11:19:15.258"></status>
+<status status="FAIL" endtime="20180501 19:06:39.869" starttime="20180501 19:02:35.851"></status>
 </suite>
 <statistics>
 <total>
-<stat fail="2" pass="0">Critical Tests</stat>
-<stat fail="2" pass="0">All Tests</stat>
+<stat fail="1" pass="1">Critical Tests</stat>
+<stat fail="1" pass="1">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat fail="2" id="s1" name="MyAccountPageTests" pass="0">MyAccountPageTests</stat>
+<stat fail="1" id="s1" name="MyAccountPageTests" pass="1">MyAccountPageTests</stat>
 </suite>
 </statistics>
 <errors>
-<msg timestamp="20180501 11:20:46.397" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: SessionNotCreatedException: Message: Tried to run command without establishing a connection
-</msg>
-<msg timestamp="20180501 11:20:46.413" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: SessionNotCreatedException: Message: Tried to run command without establishing a connection
-</msg>
-<msg timestamp="20180501 11:20:46.430" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: SessionNotCreatedException: Message: Tried to run command without establishing a connection
-</msg>
-<msg timestamp="20180501 11:20:46.446" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: SessionNotCreatedException: Message: Tried to run command without establishing a connection
-</msg>
-<msg timestamp="20180501 11:20:46.464" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: SessionNotCreatedException: Message: Tried to run command without establishing a connection
-</msg>
-<msg timestamp="20180501 11:20:48.520" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Execution terminated by signal</msg>
 </errors>
 </robot>

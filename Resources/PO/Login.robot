@@ -14,12 +14,12 @@ Verify Page Loaded
   Wait Until Page Contains  ${LOGIN_TEXT}
 
 
-Fill Username Field
+Login Fill Username Field
   [Arguments]  ${Username}
   Input Text  ${LOGIN_USERNAME_INPUT}  ${Username}
 
 
-Fill Password Field
+Login Fill Password Field
   [Arguments]  ${Password}
   Input Text  ${LOGIN_PASSWORD_INPUT}  ${Password}
 
@@ -31,8 +31,8 @@ Click Login Button
 
 Fill Login Fields and Submit
   [Arguments]  ${UserData}
-  Run Keyword Unless  '${UserData.User}' == '#BLANK'  Fill Username Field  ${UserData.User}
-  Run Keyword Unless  '${UserData.Password}' == '#BLANK'  Fill Password Field  ${UserData.Password}
+  Run Keyword Unless  '${UserData.User}' == '#BLANK'  Login Fill Username Field  ${UserData.User}
+  Run Keyword Unless  '${UserData.Password}' == '#BLANK'  Login Fill Password Field  ${UserData.Password}
   Click Login Button
 
 

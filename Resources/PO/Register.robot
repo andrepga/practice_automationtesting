@@ -14,12 +14,12 @@ Verify Page Loaded
     Wait Until Page Contains  ${REGISTER_TEXT}
 
 
-Fill Email Field
+Register Fill Email Field
     [Arguments]  ${Email}
     Input Text  ${REGISTER_EMAIL_INPUT}  ${Email}
 
 
-Fill Password Field
+Register Fill Password Field
     [Arguments]  ${Password}
     Input Text  ${REGISTER_PASSWORD}  ${Password}
 
@@ -30,8 +30,8 @@ Click Register Button
 
 Fill Register Fields and Submit
    [Arguments]  ${UserData}
-   Run Keyword Unless  '${UserData.Email}' == '#BLANK'  Fill Email Field  ${UserData.Email}
-   Run Keyword Unless  '${UserData.Password}' == '#BLANK'  Fill Password Field  ${UserData.Password}
+   Run Keyword Unless  '${UserData.Email}' == '#BLANK'  Register Fill Email Field  ${UserData.Email}
+   Run Keyword Unless  '${UserData.Password}' == '#BLANK'  Register Fill Password Field  ${UserData.Password}
    Click Register Button
 
 
