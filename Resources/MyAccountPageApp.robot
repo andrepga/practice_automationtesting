@@ -8,7 +8,6 @@ Resource  ../Resources/PO/Login.robot
 
 *** Keywords ***
 Test Multiple Register Scenarios
-
     [Arguments]  ${UserData}
     LandingPage.Page Loaded
     TopNav.Go To My Account Page
@@ -20,7 +19,6 @@ Test Multiple Register Scenarios
 
 Test Multiple Login Scenarios
     [Arguments]  ${UserData}
-
     LandingPage.Page Loaded
     TopNav.Go To My Account Page
     Login.Verify Page Loaded
