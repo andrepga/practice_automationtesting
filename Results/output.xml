@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generated="20180501 19:02:35.851" generator="Robot 3.0.2 (Python 2.7.14 on win32)">
+<robot generated="20180501 19:15:15.797" generator="Robot 3.0.2 (Python 2.7.14 on win32)">
 <suite source="C:\development\robot-scripts\practice_automationtesting\Tests\MyAccountPageTests.robot" id="s1" name="MyAccountPageTests">
 <test id="s1-t1" name="Invalid Register Scenarios Should Display Corret Error Message">
 <kw type="setup" name="Start Web Test" library="Commom">
@@ -9,14 +9,14 @@
 <arg>about:blank</arg>
 <arg>${BROWSER}</arg>
 </arguments>
-<msg timestamp="20180501 19:02:37.585" level="INFO">Opening browser 'ff' to base url 'about:blank'</msg>
-<status status="PASS" endtime="20180501 19:03:03.718" starttime="20180501 19:02:37.585"></status>
+<msg timestamp="20180501 19:15:19.015" level="INFO">Opening browser 'ff' to base url 'about:blank'</msg>
+<status status="PASS" endtime="20180501 19:15:28.343" starttime="20180501 19:15:19.015"></status>
 </kw>
 <kw name="Maximize Browser Window" library="Selenium2Library">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" endtime="20180501 19:03:07.265" starttime="20180501 19:03:03.734"></status>
+<status status="PASS" endtime="20180501 19:15:31.859" starttime="20180501 19:15:28.343"></status>
 </kw>
-<status status="PASS" endtime="20180501 19:03:07.265" starttime="20180501 19:02:37.585"></status>
+<status status="PASS" endtime="20180501 19:15:31.859" starttime="20180501 19:15:19.015"></status>
 </kw>
 <kw name="Test Multiple Register Scenarios" library="MyAccountPageApp">
 <arguments>
@@ -29,18 +29,18 @@
 <arguments>
 <arg>${BASE_URL}</arg>
 </arguments>
-<msg timestamp="20180501 19:03:07.265" level="INFO">Opening url 'http://practice.automationtesting.in/'</msg>
-<status status="PASS" endtime="20180501 19:03:27.245" starttime="20180501 19:03:07.265"></status>
+<msg timestamp="20180501 19:15:31.859" level="INFO">Opening url 'http://practice.automationtesting.in/'</msg>
+<status status="PASS" endtime="20180501 19:15:49.522" starttime="20180501 19:15:31.859"></status>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>2s</arg>
 </arguments>
-<msg timestamp="20180501 19:03:29.245" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" endtime="20180501 19:03:29.245" starttime="20180501 19:03:27.245"></status>
+<msg timestamp="20180501 19:15:51.522" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" endtime="20180501 19:15:51.522" starttime="20180501 19:15:49.522"></status>
 </kw>
-<status status="PASS" endtime="20180501 19:03:29.245" starttime="20180501 19:03:07.265"></status>
+<status status="PASS" endtime="20180501 19:15:51.522" starttime="20180501 19:15:31.859"></status>
 </kw>
 <kw name="Verify Landing Page Loaded" library="LandingPage">
 <kw name="Page Should Contain Image" library="Selenium2Library">
@@ -48,12 +48,12 @@
 <arguments>
 <arg>${Image_Path}</arg>
 </arguments>
-<msg timestamp="20180501 19:03:29.276" level="INFO">Current page contains image 'xpath=//*[@id="n2-ss-6"]/div[1]/div/div/div[1]/div[1]/img'.</msg>
-<status status="PASS" endtime="20180501 19:03:29.276" starttime="20180501 19:03:29.245"></status>
+<msg timestamp="20180501 19:15:51.538" level="INFO">Current page contains image 'xpath=//*[@id="n2-ss-6"]/div[1]/div/div/div[1]/div[1]/img'.</msg>
+<status status="PASS" endtime="20180501 19:15:51.538" starttime="20180501 19:15:51.522"></status>
 </kw>
-<status status="PASS" endtime="20180501 19:03:29.276" starttime="20180501 19:03:29.245"></status>
+<status status="PASS" endtime="20180501 19:15:51.538" starttime="20180501 19:15:51.522"></status>
 </kw>
-<status status="PASS" endtime="20180501 19:03:29.276" starttime="20180501 19:03:07.265"></status>
+<status status="PASS" endtime="20180501 19:15:51.538" starttime="20180501 19:15:31.859"></status>
 </kw>
 <kw name="Go To My Account Page" library="TopNav">
 <kw name="Click Link" library="Selenium2Library">
@@ -61,10 +61,10 @@
 <arguments>
 <arg>${Link_Account_Locator}</arg>
 </arguments>
-<msg timestamp="20180501 19:03:29.292" level="INFO">Clicking link 'xpath=//*[@id="menu-item-50"]/a'.</msg>
-<status status="PASS" endtime="20180501 19:03:39.995" starttime="20180501 19:03:29.292"></status>
+<msg timestamp="20180501 19:15:51.538" level="INFO">Clicking link 'xpath=//*[@id="menu-item-50"]/a'.</msg>
+<status status="PASS" endtime="20180501 19:16:04.591" starttime="20180501 19:15:51.538"></status>
 </kw>
-<status status="PASS" endtime="20180501 19:03:39.995" starttime="20180501 19:03:29.276"></status>
+<status status="PASS" endtime="20180501 19:16:04.591" starttime="20180501 19:15:51.538"></status>
 </kw>
 <kw name="Verify Page Loaded" library="Register">
 <kw name="Wait Until Page Contains" library="Selenium2Library">
@@ -72,9 +72,9 @@
 <arguments>
 <arg>${REGISTER_TEXT}</arg>
 </arguments>
-<status status="PASS" endtime="20180501 19:03:40.042" starttime="20180501 19:03:39.995"></status>
+<status status="PASS" endtime="20180501 19:16:04.653" starttime="20180501 19:16:04.591"></status>
 </kw>
-<status status="PASS" endtime="20180501 19:03:40.042" starttime="20180501 19:03:39.995"></status>
+<status status="PASS" endtime="20180501 19:16:04.653" starttime="20180501 19:16:04.591"></status>
 </kw>
 <kw name="Fill Register Fields and Submit" library="Register">
 <arguments>
@@ -84,10 +84,10 @@
 <doc>Runs the given keyword with the given arguments, if ``condition`` is false.</doc>
 <arguments>
 <arg>'${UserData.Email}' == '#BLANK'</arg>
-<arg>Fill Email Field</arg>
+<arg>Register Fill Email Field</arg>
 <arg>${UserData.Email}</arg>
 </arguments>
-<kw name="Fill Email Field" library="Register">
+<kw name="Register Fill Email Field" library="Register">
 <arguments>
 <arg>${UserData.Email}</arg>
 </arguments>
@@ -97,21 +97,21 @@
 <arg>${REGISTER_EMAIL_INPUT}</arg>
 <arg>${Email}</arg>
 </arguments>
-<msg timestamp="20180501 19:03:40.057" level="INFO">Typing text 'test@be' into text field 'xpath=//input[@id='reg_email']'</msg>
-<status status="PASS" endtime="20180501 19:03:40.214" starttime="20180501 19:03:40.057"></status>
+<msg timestamp="20180501 19:16:04.653" level="INFO">Typing text 'test@be' into text field 'xpath=//input[@id='reg_email']'</msg>
+<status status="PASS" endtime="20180501 19:16:04.700" starttime="20180501 19:16:04.653"></status>
 </kw>
-<status status="PASS" endtime="20180501 19:03:40.214" starttime="20180501 19:03:40.057"></status>
+<status status="PASS" endtime="20180501 19:16:04.716" starttime="20180501 19:16:04.653"></status>
 </kw>
-<status status="PASS" endtime="20180501 19:03:40.214" starttime="20180501 19:03:40.042"></status>
+<status status="PASS" endtime="20180501 19:16:04.716" starttime="20180501 19:16:04.653"></status>
 </kw>
 <kw name="Run Keyword Unless" library="BuiltIn">
 <doc>Runs the given keyword with the given arguments, if ``condition`` is false.</doc>
 <arguments>
 <arg>'${UserData.Password}' == '#BLANK'</arg>
-<arg>Fill Password Field</arg>
+<arg>Register Fill Password Field</arg>
 <arg>${UserData.Password}</arg>
 </arguments>
-<status status="PASS" endtime="20180501 19:03:40.214" starttime="20180501 19:03:40.214"></status>
+<status status="PASS" endtime="20180501 19:16:04.716" starttime="20180501 19:16:04.716"></status>
 </kw>
 <kw name="Click Register Button" library="Register">
 <kw name="Click Button" library="Selenium2Library">
@@ -119,12 +119,12 @@
 <arguments>
 <arg>${REGISTER_SUBMIT_BUTTON}</arg>
 </arguments>
-<msg timestamp="20180501 19:03:40.214" level="INFO">Clicking button 'name=register'.</msg>
-<status status="PASS" endtime="20180501 19:03:52.236" starttime="20180501 19:03:40.214"></status>
+<msg timestamp="20180501 19:16:04.716" level="INFO">Clicking button 'name=register'.</msg>
+<status status="PASS" endtime="20180501 19:16:12.346" starttime="20180501 19:16:04.716"></status>
 </kw>
-<status status="PASS" endtime="20180501 19:03:52.236" starttime="20180501 19:03:40.214"></status>
+<status status="PASS" endtime="20180501 19:16:12.346" starttime="20180501 19:16:04.716"></status>
 </kw>
-<status status="PASS" endtime="20180501 19:03:52.236" starttime="20180501 19:03:40.042"></status>
+<status status="PASS" endtime="20180501 19:16:12.346" starttime="20180501 19:16:04.653"></status>
 </kw>
 <kw name="Verify Error Message" library="Register">
 <arguments>
@@ -135,19 +135,19 @@
 <arguments>
 <arg>${ErrorMessage}</arg>
 </arguments>
-<status status="PASS" endtime="20180501 19:03:52.314" starttime="20180501 19:03:52.252"></status>
+<status status="PASS" endtime="20180501 19:16:12.377" starttime="20180501 19:16:12.346"></status>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>5s</arg>
 </arguments>
-<msg timestamp="20180501 19:03:57.314" level="INFO">Slept 5 seconds</msg>
-<status status="PASS" endtime="20180501 19:03:57.314" starttime="20180501 19:03:52.314"></status>
+<msg timestamp="20180501 19:16:17.378" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" endtime="20180501 19:16:17.378" starttime="20180501 19:16:12.377"></status>
 </kw>
-<status status="PASS" endtime="20180501 19:03:57.314" starttime="20180501 19:03:52.236"></status>
+<status status="PASS" endtime="20180501 19:16:17.378" starttime="20180501 19:16:12.346"></status>
 </kw>
-<status status="PASS" endtime="20180501 19:03:57.314" starttime="20180501 19:03:07.265"></status>
+<status status="PASS" endtime="20180501 19:16:17.378" starttime="20180501 19:15:31.859"></status>
 </kw>
 <kw name="Test Multiple Register Scenarios" library="MyAccountPageApp">
 <arguments>
@@ -160,18 +160,18 @@
 <arguments>
 <arg>${BASE_URL}</arg>
 </arguments>
-<msg timestamp="20180501 19:03:57.314" level="INFO">Opening url 'http://practice.automationtesting.in/'</msg>
-<status status="PASS" endtime="20180501 19:04:16.408" starttime="20180501 19:03:57.314"></status>
+<msg timestamp="20180501 19:16:17.378" level="INFO">Opening url 'http://practice.automationtesting.in/'</msg>
+<status status="PASS" endtime="20180501 19:16:31.447" starttime="20180501 19:16:17.378"></status>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>2s</arg>
 </arguments>
-<msg timestamp="20180501 19:04:18.424" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" endtime="20180501 19:04:18.424" starttime="20180501 19:04:16.408"></status>
+<msg timestamp="20180501 19:16:33.447" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" endtime="20180501 19:16:33.447" starttime="20180501 19:16:31.447"></status>
 </kw>
-<status status="PASS" endtime="20180501 19:04:18.424" starttime="20180501 19:03:57.314"></status>
+<status status="PASS" endtime="20180501 19:16:33.447" starttime="20180501 19:16:17.378"></status>
 </kw>
 <kw name="Verify Landing Page Loaded" library="LandingPage">
 <kw name="Page Should Contain Image" library="Selenium2Library">
@@ -179,12 +179,12 @@
 <arguments>
 <arg>${Image_Path}</arg>
 </arguments>
-<msg timestamp="20180501 19:04:18.455" level="INFO">Current page contains image 'xpath=//*[@id="n2-ss-6"]/div[1]/div/div/div[1]/div[1]/img'.</msg>
-<status status="PASS" endtime="20180501 19:04:18.455" starttime="20180501 19:04:18.424"></status>
+<msg timestamp="20180501 19:16:33.463" level="INFO">Current page contains image 'xpath=//*[@id="n2-ss-6"]/div[1]/div/div/div[1]/div[1]/img'.</msg>
+<status status="PASS" endtime="20180501 19:16:33.463" starttime="20180501 19:16:33.447"></status>
 </kw>
-<status status="PASS" endtime="20180501 19:04:18.455" starttime="20180501 19:04:18.424"></status>
+<status status="PASS" endtime="20180501 19:16:33.463" starttime="20180501 19:16:33.447"></status>
 </kw>
-<status status="PASS" endtime="20180501 19:04:18.455" starttime="20180501 19:03:57.314"></status>
+<status status="PASS" endtime="20180501 19:16:33.463" starttime="20180501 19:16:17.378"></status>
 </kw>
 <kw name="Go To My Account Page" library="TopNav">
 <kw name="Click Link" library="Selenium2Library">
@@ -192,10 +192,10 @@
 <arguments>
 <arg>${Link_Account_Locator}</arg>
 </arguments>
-<msg timestamp="20180501 19:04:18.455" level="INFO">Clicking link 'xpath=//*[@id="menu-item-50"]/a'.</msg>
-<status status="PASS" endtime="20180501 19:04:24.734" starttime="20180501 19:04:18.455"></status>
+<msg timestamp="20180501 19:16:33.478" level="INFO">Clicking link 'xpath=//*[@id="menu-item-50"]/a'.</msg>
+<status status="PASS" endtime="20180501 19:16:37.317" starttime="20180501 19:16:33.463"></status>
 </kw>
-<status status="PASS" endtime="20180501 19:04:24.735" starttime="20180501 19:04:18.455"></status>
+<status status="PASS" endtime="20180501 19:16:37.317" starttime="20180501 19:16:33.463"></status>
 </kw>
 <kw name="Verify Page Loaded" library="Register">
 <kw name="Wait Until Page Contains" library="Selenium2Library">
@@ -203,9 +203,9 @@
 <arguments>
 <arg>${REGISTER_TEXT}</arg>
 </arguments>
-<status status="PASS" endtime="20180501 19:04:24.764" starttime="20180501 19:04:24.736"></status>
+<status status="PASS" endtime="20180501 19:16:37.348" starttime="20180501 19:16:37.317"></status>
 </kw>
-<status status="PASS" endtime="20180501 19:04:24.764" starttime="20180501 19:04:24.735"></status>
+<status status="PASS" endtime="20180501 19:16:37.348" starttime="20180501 19:16:37.317"></status>
 </kw>
 <kw name="Fill Register Fields and Submit" library="Register">
 <arguments>
@@ -215,19 +215,19 @@
 <doc>Runs the given keyword with the given arguments, if ``condition`` is false.</doc>
 <arguments>
 <arg>'${UserData.Email}' == '#BLANK'</arg>
-<arg>Fill Email Field</arg>
+<arg>Register Fill Email Field</arg>
 <arg>${UserData.Email}</arg>
 </arguments>
-<status status="PASS" endtime="20180501 19:04:24.766" starttime="20180501 19:04:24.766"></status>
+<status status="PASS" endtime="20180501 19:16:37.348" starttime="20180501 19:16:37.348"></status>
 </kw>
 <kw name="Run Keyword Unless" library="BuiltIn">
 <doc>Runs the given keyword with the given arguments, if ``condition`` is false.</doc>
 <arguments>
 <arg>'${UserData.Password}' == '#BLANK'</arg>
-<arg>Fill Password Field</arg>
+<arg>Register Fill Password Field</arg>
 <arg>${UserData.Password}</arg>
 </arguments>
-<status status="PASS" endtime="20180501 19:04:24.768" starttime="20180501 19:04:24.767"></status>
+<status status="PASS" endtime="20180501 19:16:37.348" starttime="20180501 19:16:37.348"></status>
 </kw>
 <kw name="Click Register Button" library="Register">
 <kw name="Click Button" library="Selenium2Library">
@@ -235,12 +235,12 @@
 <arguments>
 <arg>${REGISTER_SUBMIT_BUTTON}</arg>
 </arguments>
-<msg timestamp="20180501 19:04:24.769" level="INFO">Clicking button 'name=register'.</msg>
-<status status="PASS" endtime="20180501 19:04:31.539" starttime="20180501 19:04:24.769"></status>
+<msg timestamp="20180501 19:16:37.348" level="INFO">Clicking button 'name=register'.</msg>
+<status status="PASS" endtime="20180501 19:16:41.694" starttime="20180501 19:16:37.348"></status>
 </kw>
-<status status="PASS" endtime="20180501 19:04:31.540" starttime="20180501 19:04:24.768"></status>
+<status status="PASS" endtime="20180501 19:16:41.695" starttime="20180501 19:16:37.348"></status>
 </kw>
-<status status="PASS" endtime="20180501 19:04:31.540" starttime="20180501 19:04:24.765"></status>
+<status status="PASS" endtime="20180501 19:16:41.695" starttime="20180501 19:16:37.348"></status>
 </kw>
 <kw name="Verify Error Message" library="Register">
 <arguments>
@@ -251,19 +251,19 @@
 <arguments>
 <arg>${ErrorMessage}</arg>
 </arguments>
-<status status="PASS" endtime="20180501 19:04:31.574" starttime="20180501 19:04:31.542"></status>
+<status status="PASS" endtime="20180501 19:16:41.823" starttime="20180501 19:16:41.697"></status>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>5s</arg>
 </arguments>
-<msg timestamp="20180501 19:04:36.580" level="INFO">Slept 5 seconds</msg>
-<status status="PASS" endtime="20180501 19:04:36.580" starttime="20180501 19:04:31.574"></status>
+<msg timestamp="20180501 19:16:46.838" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" endtime="20180501 19:16:46.838" starttime="20180501 19:16:41.823"></status>
 </kw>
-<status status="PASS" endtime="20180501 19:04:36.580" starttime="20180501 19:04:31.540"></status>
+<status status="PASS" endtime="20180501 19:16:46.838" starttime="20180501 19:16:41.696"></status>
 </kw>
-<status status="PASS" endtime="20180501 19:04:36.580" starttime="20180501 19:03:57.314"></status>
+<status status="PASS" endtime="20180501 19:16:46.838" starttime="20180501 19:16:17.378"></status>
 </kw>
 <kw name="Test Multiple Register Scenarios" library="MyAccountPageApp">
 <arguments>
@@ -276,18 +276,18 @@
 <arguments>
 <arg>${BASE_URL}</arg>
 </arguments>
-<msg timestamp="20180501 19:04:36.580" level="INFO">Opening url 'http://practice.automationtesting.in/'</msg>
-<status status="PASS" endtime="20180501 19:04:43.259" starttime="20180501 19:04:36.580"></status>
+<msg timestamp="20180501 19:16:46.838" level="INFO">Opening url 'http://practice.automationtesting.in/'</msg>
+<status status="PASS" endtime="20180501 19:17:09.749" starttime="20180501 19:16:46.838"></status>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>2s</arg>
 </arguments>
-<msg timestamp="20180501 19:04:45.261" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" endtime="20180501 19:04:45.261" starttime="20180501 19:04:43.259"></status>
+<msg timestamp="20180501 19:17:11.757" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" endtime="20180501 19:17:11.757" starttime="20180501 19:17:09.749"></status>
 </kw>
-<status status="PASS" endtime="20180501 19:04:45.261" starttime="20180501 19:04:36.580"></status>
+<status status="PASS" endtime="20180501 19:17:11.757" starttime="20180501 19:16:46.838"></status>
 </kw>
 <kw name="Verify Landing Page Loaded" library="LandingPage">
 <kw name="Page Should Contain Image" library="Selenium2Library">
@@ -295,12 +295,12 @@
 <arguments>
 <arg>${Image_Path}</arg>
 </arguments>
-<msg timestamp="20180501 19:04:45.354" level="INFO">Current page contains image 'xpath=//*[@id="n2-ss-6"]/div[1]/div/div/div[1]/div[1]/img'.</msg>
-<status status="PASS" endtime="20180501 19:04:45.354" starttime="20180501 19:04:45.261"></status>
+<msg timestamp="20180501 19:17:11.757" level="INFO">Current page contains image 'xpath=//*[@id="n2-ss-6"]/div[1]/div/div/div[1]/div[1]/img'.</msg>
+<status status="PASS" endtime="20180501 19:17:11.757" starttime="20180501 19:17:11.757"></status>
 </kw>
-<status status="PASS" endtime="20180501 19:04:45.354" starttime="20180501 19:04:45.261"></status>
+<status status="PASS" endtime="20180501 19:17:11.757" starttime="20180501 19:17:11.757"></status>
 </kw>
-<status status="PASS" endtime="20180501 19:04:45.354" starttime="20180501 19:04:36.580"></status>
+<status status="PASS" endtime="20180501 19:17:11.773" starttime="20180501 19:16:46.838"></status>
 </kw>
 <kw name="Go To My Account Page" library="TopNav">
 <kw name="Click Link" library="Selenium2Library">
@@ -308,10 +308,10 @@
 <arguments>
 <arg>${Link_Account_Locator}</arg>
 </arguments>
-<msg timestamp="20180501 19:04:45.354" level="INFO">Clicking link 'xpath=//*[@id="menu-item-50"]/a'.</msg>
-<status status="PASS" endtime="20180501 19:04:57.230" starttime="20180501 19:04:45.354"></status>
+<msg timestamp="20180501 19:17:11.773" level="INFO">Clicking link 'xpath=//*[@id="menu-item-50"]/a'.</msg>
+<status status="PASS" endtime="20180501 19:17:15.938" starttime="20180501 19:17:11.773"></status>
 </kw>
-<status status="PASS" endtime="20180501 19:04:57.230" starttime="20180501 19:04:45.354"></status>
+<status status="PASS" endtime="20180501 19:17:15.938" starttime="20180501 19:17:11.773"></status>
 </kw>
 <kw name="Verify Page Loaded" library="Register">
 <kw name="Wait Until Page Contains" library="Selenium2Library">
@@ -319,9 +319,9 @@
 <arguments>
 <arg>${REGISTER_TEXT}</arg>
 </arguments>
-<status status="PASS" endtime="20180501 19:04:57.323" starttime="20180501 19:04:57.245"></status>
+<status status="PASS" endtime="20180501 19:17:15.960" starttime="20180501 19:17:15.940"></status>
 </kw>
-<status status="PASS" endtime="20180501 19:04:57.323" starttime="20180501 19:04:57.230"></status>
+<status status="PASS" endtime="20180501 19:17:15.960" starttime="20180501 19:17:15.939"></status>
 </kw>
 <kw name="Fill Register Fields and Submit" library="Register">
 <arguments>
@@ -331,10 +331,10 @@
 <doc>Runs the given keyword with the given arguments, if ``condition`` is false.</doc>
 <arguments>
 <arg>'${UserData.Email}' == '#BLANK'</arg>
-<arg>Fill Email Field</arg>
+<arg>Register Fill Email Field</arg>
 <arg>${UserData.Email}</arg>
 </arguments>
-<kw name="Fill Email Field" library="Register">
+<kw name="Register Fill Email Field" library="Register">
 <arguments>
 <arg>${UserData.Email}</arg>
 </arguments>
@@ -344,21 +344,21 @@
 <arg>${REGISTER_EMAIL_INPUT}</arg>
 <arg>${Email}</arg>
 </arguments>
-<msg timestamp="20180501 19:04:57.323" level="INFO">Typing text 'test@test.com.br' into text field 'xpath=//input[@id='reg_email']'</msg>
-<status status="PASS" endtime="20180501 19:04:57.526" starttime="20180501 19:04:57.323"></status>
+<msg timestamp="20180501 19:17:15.964" level="INFO">Typing text 'test@test.com.br' into text field 'xpath=//input[@id='reg_email']'</msg>
+<status status="PASS" endtime="20180501 19:17:16.175" starttime="20180501 19:17:15.964"></status>
 </kw>
-<status status="PASS" endtime="20180501 19:04:57.526" starttime="20180501 19:04:57.323"></status>
+<status status="PASS" endtime="20180501 19:17:16.175" starttime="20180501 19:17:15.963"></status>
 </kw>
-<status status="PASS" endtime="20180501 19:04:57.542" starttime="20180501 19:04:57.323"></status>
+<status status="PASS" endtime="20180501 19:17:16.175" starttime="20180501 19:17:15.961"></status>
 </kw>
 <kw name="Run Keyword Unless" library="BuiltIn">
 <doc>Runs the given keyword with the given arguments, if ``condition`` is false.</doc>
 <arguments>
 <arg>'${UserData.Password}' == '#BLANK'</arg>
-<arg>Fill Password Field</arg>
+<arg>Register Fill Password Field</arg>
 <arg>${UserData.Password}</arg>
 </arguments>
-<status status="PASS" endtime="20180501 19:04:57.542" starttime="20180501 19:04:57.542"></status>
+<status status="PASS" endtime="20180501 19:17:16.177" starttime="20180501 19:17:16.176"></status>
 </kw>
 <kw name="Click Register Button" library="Register">
 <kw name="Click Button" library="Selenium2Library">
@@ -366,12 +366,12 @@
 <arguments>
 <arg>${REGISTER_SUBMIT_BUTTON}</arg>
 </arguments>
-<msg timestamp="20180501 19:04:57.558" level="INFO">Clicking button 'name=register'.</msg>
-<status status="PASS" endtime="20180501 19:05:02.003" starttime="20180501 19:04:57.558"></status>
+<msg timestamp="20180501 19:17:16.179" level="INFO">Clicking button 'name=register'.</msg>
+<status status="PASS" endtime="20180501 19:17:20.191" starttime="20180501 19:17:16.178"></status>
 </kw>
-<status status="PASS" endtime="20180501 19:05:02.004" starttime="20180501 19:04:57.558"></status>
+<status status="PASS" endtime="20180501 19:17:20.191" starttime="20180501 19:17:16.177"></status>
 </kw>
-<status status="PASS" endtime="20180501 19:05:02.004" starttime="20180501 19:04:57.323"></status>
+<status status="PASS" endtime="20180501 19:17:20.192" starttime="20180501 19:17:15.960"></status>
 </kw>
 <kw name="Verify Error Message" library="Register">
 <arguments>
@@ -382,19 +382,19 @@
 <arguments>
 <arg>${ErrorMessage}</arg>
 </arguments>
-<status status="PASS" endtime="20180501 19:05:02.030" starttime="20180501 19:05:02.006"></status>
+<status status="PASS" endtime="20180501 19:17:20.228" starttime="20180501 19:17:20.194"></status>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>5s</arg>
 </arguments>
-<msg timestamp="20180501 19:05:07.035" level="INFO">Slept 5 seconds</msg>
-<status status="PASS" endtime="20180501 19:05:07.035" starttime="20180501 19:05:02.030"></status>
+<msg timestamp="20180501 19:17:25.229" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" endtime="20180501 19:17:25.229" starttime="20180501 19:17:20.228"></status>
 </kw>
-<status status="PASS" endtime="20180501 19:05:07.035" starttime="20180501 19:05:02.004"></status>
+<status status="PASS" endtime="20180501 19:17:25.229" starttime="20180501 19:17:20.192"></status>
 </kw>
-<status status="PASS" endtime="20180501 19:05:07.035" starttime="20180501 19:04:36.580"></status>
+<status status="PASS" endtime="20180501 19:17:25.229" starttime="20180501 19:16:46.838"></status>
 </kw>
 <kw name="Test Multiple Register Scenarios" library="MyAccountPageApp">
 <arguments>
@@ -407,18 +407,18 @@
 <arguments>
 <arg>${BASE_URL}</arg>
 </arguments>
-<msg timestamp="20180501 19:05:07.035" level="INFO">Opening url 'http://practice.automationtesting.in/'</msg>
-<status status="PASS" endtime="20180501 19:05:11.538" starttime="20180501 19:05:07.035"></status>
+<msg timestamp="20180501 19:17:25.229" level="INFO">Opening url 'http://practice.automationtesting.in/'</msg>
+<status status="PASS" endtime="20180501 19:17:35.881" starttime="20180501 19:17:25.229"></status>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>2s</arg>
 </arguments>
-<msg timestamp="20180501 19:05:13.539" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" endtime="20180501 19:05:13.539" starttime="20180501 19:05:11.539"></status>
+<msg timestamp="20180501 19:17:37.891" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" endtime="20180501 19:17:37.891" starttime="20180501 19:17:35.882"></status>
 </kw>
-<status status="PASS" endtime="20180501 19:05:13.539" starttime="20180501 19:05:07.035"></status>
+<status status="PASS" endtime="20180501 19:17:37.891" starttime="20180501 19:17:25.229"></status>
 </kw>
 <kw name="Verify Landing Page Loaded" library="LandingPage">
 <kw name="Page Should Contain Image" library="Selenium2Library">
@@ -426,12 +426,12 @@
 <arguments>
 <arg>${Image_Path}</arg>
 </arguments>
-<msg timestamp="20180501 19:05:13.582" level="INFO">Current page contains image 'xpath=//*[@id="n2-ss-6"]/div[1]/div/div/div[1]/div[1]/img'.</msg>
-<status status="PASS" endtime="20180501 19:05:13.582" starttime="20180501 19:05:13.540"></status>
+<msg timestamp="20180501 19:17:37.946" level="INFO">Current page contains image 'xpath=//*[@id="n2-ss-6"]/div[1]/div/div/div[1]/div[1]/img'.</msg>
+<status status="PASS" endtime="20180501 19:17:37.947" starttime="20180501 19:17:37.892"></status>
 </kw>
-<status status="PASS" endtime="20180501 19:05:13.582" starttime="20180501 19:05:13.539"></status>
+<status status="PASS" endtime="20180501 19:17:37.947" starttime="20180501 19:17:37.891"></status>
 </kw>
-<status status="PASS" endtime="20180501 19:05:13.582" starttime="20180501 19:05:07.035"></status>
+<status status="PASS" endtime="20180501 19:17:37.947" starttime="20180501 19:17:25.229"></status>
 </kw>
 <kw name="Go To My Account Page" library="TopNav">
 <kw name="Click Link" library="Selenium2Library">
@@ -439,10 +439,10 @@
 <arguments>
 <arg>${Link_Account_Locator}</arg>
 </arguments>
-<msg timestamp="20180501 19:05:13.584" level="INFO">Clicking link 'xpath=//*[@id="menu-item-50"]/a'.</msg>
-<status status="PASS" endtime="20180501 19:05:20.003" starttime="20180501 19:05:13.583"></status>
+<msg timestamp="20180501 19:17:37.948" level="INFO">Clicking link 'xpath=//*[@id="menu-item-50"]/a'.</msg>
+<status status="PASS" endtime="20180501 19:17:46.194" starttime="20180501 19:17:37.948"></status>
 </kw>
-<status status="PASS" endtime="20180501 19:05:20.003" starttime="20180501 19:05:13.583"></status>
+<status status="PASS" endtime="20180501 19:17:46.194" starttime="20180501 19:17:37.947"></status>
 </kw>
 <kw name="Verify Page Loaded" library="Register">
 <kw name="Wait Until Page Contains" library="Selenium2Library">
@@ -450,9 +450,9 @@
 <arguments>
 <arg>${REGISTER_TEXT}</arg>
 </arguments>
-<status status="PASS" endtime="20180501 19:05:20.034" starttime="20180501 19:05:20.003"></status>
+<status status="PASS" endtime="20180501 19:17:46.303" starttime="20180501 19:17:46.194"></status>
 </kw>
-<status status="PASS" endtime="20180501 19:05:20.034" starttime="20180501 19:05:20.003"></status>
+<status status="PASS" endtime="20180501 19:17:46.303" starttime="20180501 19:17:46.194"></status>
 </kw>
 <kw name="Fill Register Fields and Submit" library="Register">
 <arguments>
@@ -462,19 +462,19 @@
 <doc>Runs the given keyword with the given arguments, if ``condition`` is false.</doc>
 <arguments>
 <arg>'${UserData.Email}' == '#BLANK'</arg>
-<arg>Fill Email Field</arg>
+<arg>Register Fill Email Field</arg>
 <arg>${UserData.Email}</arg>
 </arguments>
-<status status="PASS" endtime="20180501 19:05:20.034" starttime="20180501 19:05:20.034"></status>
+<status status="PASS" endtime="20180501 19:17:46.319" starttime="20180501 19:17:46.319"></status>
 </kw>
 <kw name="Run Keyword Unless" library="BuiltIn">
 <doc>Runs the given keyword with the given arguments, if ``condition`` is false.</doc>
 <arguments>
 <arg>'${UserData.Password}' == '#BLANK'</arg>
-<arg>Fill Password Field</arg>
+<arg>Register Fill Password Field</arg>
 <arg>${UserData.Password}</arg>
 </arguments>
-<status status="PASS" endtime="20180501 19:05:20.034" starttime="20180501 19:05:20.034"></status>
+<status status="PASS" endtime="20180501 19:17:46.319" starttime="20180501 19:17:46.319"></status>
 </kw>
 <kw name="Click Register Button" library="Register">
 <kw name="Click Button" library="Selenium2Library">
@@ -482,12 +482,12 @@
 <arguments>
 <arg>${REGISTER_SUBMIT_BUTTON}</arg>
 </arguments>
-<msg timestamp="20180501 19:05:20.050" level="INFO">Clicking button 'name=register'.</msg>
-<status status="PASS" endtime="20180501 19:05:22.847" starttime="20180501 19:05:20.034"></status>
+<msg timestamp="20180501 19:17:46.319" level="INFO">Clicking button 'name=register'.</msg>
+<status status="PASS" endtime="20180501 19:17:50.533" starttime="20180501 19:17:46.319"></status>
 </kw>
-<status status="PASS" endtime="20180501 19:05:22.847" starttime="20180501 19:05:20.034"></status>
+<status status="PASS" endtime="20180501 19:17:50.533" starttime="20180501 19:17:46.319"></status>
 </kw>
-<status status="PASS" endtime="20180501 19:05:22.847" starttime="20180501 19:05:20.034"></status>
+<status status="PASS" endtime="20180501 19:17:50.533" starttime="20180501 19:17:46.303"></status>
 </kw>
 <kw name="Verify Error Message" library="Register">
 <arguments>
@@ -498,19 +498,19 @@
 <arguments>
 <arg>${ErrorMessage}</arg>
 </arguments>
-<status status="PASS" endtime="20180501 19:05:22.941" starttime="20180501 19:05:22.847"></status>
+<status status="PASS" endtime="20180501 19:17:50.649" starttime="20180501 19:17:50.535"></status>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>5s</arg>
 </arguments>
-<msg timestamp="20180501 19:05:27.941" level="INFO">Slept 5 seconds</msg>
-<status status="PASS" endtime="20180501 19:05:27.941" starttime="20180501 19:05:22.941"></status>
+<msg timestamp="20180501 19:17:55.650" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" endtime="20180501 19:17:55.650" starttime="20180501 19:17:50.649"></status>
 </kw>
-<status status="PASS" endtime="20180501 19:05:27.941" starttime="20180501 19:05:22.847"></status>
+<status status="PASS" endtime="20180501 19:17:55.650" starttime="20180501 19:17:50.534"></status>
 </kw>
-<status status="PASS" endtime="20180501 19:05:27.941" starttime="20180501 19:05:07.035"></status>
+<status status="PASS" endtime="20180501 19:17:55.650" starttime="20180501 19:17:25.229"></status>
 </kw>
 <kw name="Test Multiple Register Scenarios" library="MyAccountPageApp">
 <arguments>
@@ -523,18 +523,18 @@
 <arguments>
 <arg>${BASE_URL}</arg>
 </arguments>
-<msg timestamp="20180501 19:05:27.941" level="INFO">Opening url 'http://practice.automationtesting.in/'</msg>
-<status status="PASS" endtime="20180501 19:05:31.753" starttime="20180501 19:05:27.941"></status>
+<msg timestamp="20180501 19:17:55.650" level="INFO">Opening url 'http://practice.automationtesting.in/'</msg>
+<status status="PASS" endtime="20180501 19:18:01.355" starttime="20180501 19:17:55.650"></status>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>2s</arg>
 </arguments>
-<msg timestamp="20180501 19:05:33.753" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" endtime="20180501 19:05:33.753" starttime="20180501 19:05:31.753"></status>
+<msg timestamp="20180501 19:18:03.362" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" endtime="20180501 19:18:03.362" starttime="20180501 19:18:01.355"></status>
 </kw>
-<status status="PASS" endtime="20180501 19:05:33.753" starttime="20180501 19:05:27.941"></status>
+<status status="PASS" endtime="20180501 19:18:03.362" starttime="20180501 19:17:55.650"></status>
 </kw>
 <kw name="Verify Landing Page Loaded" library="LandingPage">
 <kw name="Page Should Contain Image" library="Selenium2Library">
@@ -542,12 +542,12 @@
 <arguments>
 <arg>${Image_Path}</arg>
 </arguments>
-<msg timestamp="20180501 19:05:33.831" level="INFO">Current page contains image 'xpath=//*[@id="n2-ss-6"]/div[1]/div/div/div[1]/div[1]/img'.</msg>
-<status status="PASS" endtime="20180501 19:05:33.831" starttime="20180501 19:05:33.753"></status>
+<msg timestamp="20180501 19:18:03.393" level="INFO">Current page contains image 'xpath=//*[@id="n2-ss-6"]/div[1]/div/div/div[1]/div[1]/img'.</msg>
+<status status="PASS" endtime="20180501 19:18:03.393" starttime="20180501 19:18:03.362"></status>
 </kw>
-<status status="PASS" endtime="20180501 19:05:33.831" starttime="20180501 19:05:33.753"></status>
+<status status="PASS" endtime="20180501 19:18:03.393" starttime="20180501 19:18:03.362"></status>
 </kw>
-<status status="PASS" endtime="20180501 19:05:33.831" starttime="20180501 19:05:27.941"></status>
+<status status="PASS" endtime="20180501 19:18:03.393" starttime="20180501 19:17:55.650"></status>
 </kw>
 <kw name="Go To My Account Page" library="TopNav">
 <kw name="Click Link" library="Selenium2Library">
@@ -555,10 +555,10 @@
 <arguments>
 <arg>${Link_Account_Locator}</arg>
 </arguments>
-<msg timestamp="20180501 19:05:33.831" level="INFO">Clicking link 'xpath=//*[@id="menu-item-50"]/a'.</msg>
-<status status="PASS" endtime="20180501 19:05:37.574" starttime="20180501 19:05:33.831"></status>
+<msg timestamp="20180501 19:18:03.393" level="INFO">Clicking link 'xpath=//*[@id="menu-item-50"]/a'.</msg>
+<status status="PASS" endtime="20180501 19:18:08.580" starttime="20180501 19:18:03.393"></status>
 </kw>
-<status status="PASS" endtime="20180501 19:05:37.574" starttime="20180501 19:05:33.831"></status>
+<status status="PASS" endtime="20180501 19:18:08.580" starttime="20180501 19:18:03.393"></status>
 </kw>
 <kw name="Verify Page Loaded" library="Register">
 <kw name="Wait Until Page Contains" library="Selenium2Library">
@@ -566,9 +566,9 @@
 <arguments>
 <arg>${REGISTER_TEXT}</arg>
 </arguments>
-<status status="PASS" endtime="20180501 19:05:37.605" starttime="20180501 19:05:37.574"></status>
+<status status="PASS" endtime="20180501 19:18:08.674" starttime="20180501 19:18:08.596"></status>
 </kw>
-<status status="PASS" endtime="20180501 19:05:37.605" starttime="20180501 19:05:37.574"></status>
+<status status="PASS" endtime="20180501 19:18:08.674" starttime="20180501 19:18:08.580"></status>
 </kw>
 <kw name="Fill Register Fields and Submit" library="Register">
 <arguments>
@@ -578,10 +578,10 @@
 <doc>Runs the given keyword with the given arguments, if ``condition`` is false.</doc>
 <arguments>
 <arg>'${UserData.Email}' == '#BLANK'</arg>
-<arg>Fill Email Field</arg>
+<arg>Register Fill Email Field</arg>
 <arg>${UserData.Email}</arg>
 </arguments>
-<kw name="Fill Email Field" library="Register">
+<kw name="Register Fill Email Field" library="Register">
 <arguments>
 <arg>${UserData.Email}</arg>
 </arguments>
@@ -591,21 +591,21 @@
 <arg>${REGISTER_EMAIL_INPUT}</arg>
 <arg>${Email}</arg>
 </arguments>
-<msg timestamp="20180501 19:05:37.605" level="INFO">Typing text 'test@test.com' into text field 'xpath=//input[@id='reg_email']'</msg>
-<status status="PASS" endtime="20180501 19:05:37.777" starttime="20180501 19:05:37.605"></status>
+<msg timestamp="20180501 19:18:08.674" level="INFO">Typing text 'test@test.com' into text field 'xpath=//input[@id='reg_email']'</msg>
+<status status="PASS" endtime="20180501 19:18:08.862" starttime="20180501 19:18:08.674"></status>
 </kw>
-<status status="PASS" endtime="20180501 19:05:37.777" starttime="20180501 19:05:37.605"></status>
+<status status="PASS" endtime="20180501 19:18:08.862" starttime="20180501 19:18:08.674"></status>
 </kw>
-<status status="PASS" endtime="20180501 19:05:37.777" starttime="20180501 19:05:37.605"></status>
+<status status="PASS" endtime="20180501 19:18:08.862" starttime="20180501 19:18:08.674"></status>
 </kw>
 <kw name="Run Keyword Unless" library="BuiltIn">
 <doc>Runs the given keyword with the given arguments, if ``condition`` is false.</doc>
 <arguments>
 <arg>'${UserData.Password}' == '#BLANK'</arg>
-<arg>Fill Password Field</arg>
+<arg>Register Fill Password Field</arg>
 <arg>${UserData.Password}</arg>
 </arguments>
-<status status="PASS" endtime="20180501 19:05:37.777" starttime="20180501 19:05:37.777"></status>
+<status status="PASS" endtime="20180501 19:18:08.862" starttime="20180501 19:18:08.862"></status>
 </kw>
 <kw name="Click Register Button" library="Register">
 <kw name="Click Button" library="Selenium2Library">
@@ -613,12 +613,12 @@
 <arguments>
 <arg>${REGISTER_SUBMIT_BUTTON}</arg>
 </arguments>
-<msg timestamp="20180501 19:05:37.777" level="INFO">Clicking button 'name=register'.</msg>
-<status status="PASS" endtime="20180501 19:05:40.949" starttime="20180501 19:05:37.777"></status>
+<msg timestamp="20180501 19:18:08.862" level="INFO">Clicking button 'name=register'.</msg>
+<status status="PASS" endtime="20180501 19:18:13.612" starttime="20180501 19:18:08.862"></status>
 </kw>
-<status status="PASS" endtime="20180501 19:05:40.949" starttime="20180501 19:05:37.777"></status>
+<status status="PASS" endtime="20180501 19:18:13.612" starttime="20180501 19:18:08.862"></status>
 </kw>
-<status status="PASS" endtime="20180501 19:05:40.949" starttime="20180501 19:05:37.605"></status>
+<status status="PASS" endtime="20180501 19:18:13.612" starttime="20180501 19:18:08.674"></status>
 </kw>
 <kw name="Verify Error Message" library="Register">
 <arguments>
@@ -629,28 +629,28 @@
 <arguments>
 <arg>${ErrorMessage}</arg>
 </arguments>
-<status status="PASS" endtime="20180501 19:05:41.027" starttime="20180501 19:05:40.949"></status>
+<status status="PASS" endtime="20180501 19:18:13.737" starttime="20180501 19:18:13.627"></status>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>5s</arg>
 </arguments>
-<msg timestamp="20180501 19:05:46.027" level="INFO">Slept 5 seconds</msg>
-<status status="PASS" endtime="20180501 19:05:46.027" starttime="20180501 19:05:41.027"></status>
+<msg timestamp="20180501 19:18:18.737" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" endtime="20180501 19:18:18.737" starttime="20180501 19:18:13.737"></status>
 </kw>
-<status status="PASS" endtime="20180501 19:05:46.027" starttime="20180501 19:05:40.949"></status>
+<status status="PASS" endtime="20180501 19:18:18.737" starttime="20180501 19:18:13.627"></status>
 </kw>
-<status status="PASS" endtime="20180501 19:05:46.027" starttime="20180501 19:05:27.941"></status>
+<status status="PASS" endtime="20180501 19:18:18.737" starttime="20180501 19:17:55.650"></status>
 </kw>
 <kw type="teardown" name="End Web Test" library="Commom">
 <kw name="Close All Browsers" library="Selenium2Library">
 <doc>Closes all open browsers and resets the browser cache.</doc>
-<status status="PASS" endtime="20180501 19:05:51.713" starttime="20180501 19:05:46.027"></status>
+<status status="PASS" endtime="20180501 19:18:24.938" starttime="20180501 19:18:18.737"></status>
 </kw>
-<status status="PASS" endtime="20180501 19:05:51.713" starttime="20180501 19:05:46.027"></status>
+<status status="PASS" endtime="20180501 19:18:24.938" starttime="20180501 19:18:18.737"></status>
 </kw>
-<status status="PASS" endtime="20180501 19:05:51.713" critical="yes" starttime="20180501 19:02:37.585"></status>
+<status status="PASS" endtime="20180501 19:18:24.938" critical="yes" starttime="20180501 19:15:19.015"></status>
 </test>
 <test id="s1-t2" name="Invalid Login Scenarios Should Display Correct Error Message">
 <kw type="setup" name="Start Web Test" library="Commom">
@@ -660,14 +660,14 @@
 <arg>about:blank</arg>
 <arg>${BROWSER}</arg>
 </arguments>
-<msg timestamp="20180501 19:05:51.729" level="INFO">Opening browser 'ff' to base url 'about:blank'</msg>
-<status status="PASS" endtime="20180501 19:06:04.979" starttime="20180501 19:05:51.729"></status>
+<msg timestamp="20180501 19:18:24.938" level="INFO">Opening browser 'ff' to base url 'about:blank'</msg>
+<status status="PASS" endtime="20180501 19:18:34.641" starttime="20180501 19:18:24.938"></status>
 </kw>
 <kw name="Maximize Browser Window" library="Selenium2Library">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" endtime="20180501 19:06:08.620" starttime="20180501 19:06:04.979"></status>
+<status status="PASS" endtime="20180501 19:18:38.172" starttime="20180501 19:18:34.641"></status>
 </kw>
-<status status="PASS" endtime="20180501 19:06:08.620" starttime="20180501 19:05:51.729"></status>
+<status status="PASS" endtime="20180501 19:18:38.172" starttime="20180501 19:18:24.938"></status>
 </kw>
 <kw name="Test Multiple Login Scenarios" library="MyAccountPageApp">
 <arguments>
@@ -680,18 +680,18 @@
 <arguments>
 <arg>${BASE_URL}</arg>
 </arguments>
-<msg timestamp="20180501 19:06:08.635" level="INFO">Opening url 'http://practice.automationtesting.in/'</msg>
-<status status="PASS" endtime="20180501 19:06:27.010" starttime="20180501 19:06:08.635"></status>
+<msg timestamp="20180501 19:18:38.172" level="INFO">Opening url 'http://practice.automationtesting.in/'</msg>
+<status status="PASS" endtime="20180501 19:18:58.317" starttime="20180501 19:18:38.172"></status>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>2s</arg>
 </arguments>
-<msg timestamp="20180501 19:06:29.010" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" endtime="20180501 19:06:29.010" starttime="20180501 19:06:27.010"></status>
+<msg timestamp="20180501 19:19:00.317" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" endtime="20180501 19:19:00.317" starttime="20180501 19:18:58.317"></status>
 </kw>
-<status status="PASS" endtime="20180501 19:06:29.010" starttime="20180501 19:06:08.635"></status>
+<status status="PASS" endtime="20180501 19:19:00.317" starttime="20180501 19:18:38.172"></status>
 </kw>
 <kw name="Verify Landing Page Loaded" library="LandingPage">
 <kw name="Page Should Contain Image" library="Selenium2Library">
@@ -699,12 +699,12 @@
 <arguments>
 <arg>${Image_Path}</arg>
 </arguments>
-<msg timestamp="20180501 19:06:29.025" level="INFO">Current page contains image 'xpath=//*[@id="n2-ss-6"]/div[1]/div/div/div[1]/div[1]/img'.</msg>
-<status status="PASS" endtime="20180501 19:06:29.025" starttime="20180501 19:06:29.010"></status>
+<msg timestamp="20180501 19:19:00.333" level="INFO">Current page contains image 'xpath=//*[@id="n2-ss-6"]/div[1]/div/div/div[1]/div[1]/img'.</msg>
+<status status="PASS" endtime="20180501 19:19:00.333" starttime="20180501 19:19:00.317"></status>
 </kw>
-<status status="PASS" endtime="20180501 19:06:29.025" starttime="20180501 19:06:29.010"></status>
+<status status="PASS" endtime="20180501 19:19:00.333" starttime="20180501 19:19:00.317"></status>
 </kw>
-<status status="PASS" endtime="20180501 19:06:29.025" starttime="20180501 19:06:08.635"></status>
+<status status="PASS" endtime="20180501 19:19:00.333" starttime="20180501 19:18:38.172"></status>
 </kw>
 <kw name="Go To My Account Page" library="TopNav">
 <kw name="Click Link" library="Selenium2Library">
@@ -712,10 +712,10 @@
 <arguments>
 <arg>${Link_Account_Locator}</arg>
 </arguments>
-<msg timestamp="20180501 19:06:29.025" level="INFO">Clicking link 'xpath=//*[@id="menu-item-50"]/a'.</msg>
-<status status="PASS" endtime="20180501 19:06:36.182" starttime="20180501 19:06:29.025"></status>
+<msg timestamp="20180501 19:19:00.333" level="INFO">Clicking link 'xpath=//*[@id="menu-item-50"]/a'.</msg>
+<status status="PASS" endtime="20180501 19:19:16.457" starttime="20180501 19:19:00.333"></status>
 </kw>
-<status status="PASS" endtime="20180501 19:06:36.182" starttime="20180501 19:06:29.025"></status>
+<status status="PASS" endtime="20180501 19:19:16.457" starttime="20180501 19:19:00.333"></status>
 </kw>
 <kw name="Verify Page Loaded" library="Login">
 <kw name="Wait Until Page Contains" library="Selenium2Library">
@@ -723,9 +723,9 @@
 <arguments>
 <arg>${LOGIN_TEXT}</arg>
 </arguments>
-<status status="PASS" endtime="20180501 19:06:36.244" starttime="20180501 19:06:36.182"></status>
+<status status="PASS" endtime="20180501 19:19:16.504" starttime="20180501 19:19:16.457"></status>
 </kw>
-<status status="PASS" endtime="20180501 19:06:36.244" starttime="20180501 19:06:36.182"></status>
+<status status="PASS" endtime="20180501 19:19:16.504" starttime="20180501 19:19:16.457"></status>
 </kw>
 <kw name="Fill Login Fields and Submit" library="Login">
 <arguments>
@@ -735,10 +735,10 @@
 <doc>Runs the given keyword with the given arguments, if ``condition`` is false.</doc>
 <arguments>
 <arg>'${UserData.User}' == '#BLANK'</arg>
-<arg>Fill Username Field</arg>
+<arg>Login Fill Username Field</arg>
 <arg>${UserData.User}</arg>
 </arguments>
-<kw name="Fill Username Field" library="Login">
+<kw name="Login Fill Username Field" library="Login">
 <arguments>
 <arg>${UserData.User}</arg>
 </arguments>
@@ -748,57 +748,632 @@
 <arg>${LOGIN_USERNAME_INPUT}</arg>
 <arg>${Username}</arg>
 </arguments>
-<msg timestamp="20180501 19:06:36.244" level="INFO">Typing text 'test987' into text field 'xpath=//input[@id='username']'</msg>
-<status status="PASS" endtime="20180501 19:06:36.307" starttime="20180501 19:06:36.244"></status>
+<msg timestamp="20180501 19:19:16.504" level="INFO">Typing text 'test987' into text field 'xpath=//input[@id='username']'</msg>
+<status status="PASS" endtime="20180501 19:19:16.567" starttime="20180501 19:19:16.504"></status>
 </kw>
-<status status="PASS" endtime="20180501 19:06:36.307" starttime="20180501 19:06:36.244"></status>
+<status status="PASS" endtime="20180501 19:19:16.567" starttime="20180501 19:19:16.504"></status>
 </kw>
-<status status="PASS" endtime="20180501 19:06:36.307" starttime="20180501 19:06:36.244"></status>
+<status status="PASS" endtime="20180501 19:19:16.567" starttime="20180501 19:19:16.504"></status>
 </kw>
 <kw name="Run Keyword Unless" library="BuiltIn">
 <doc>Runs the given keyword with the given arguments, if ``condition`` is false.</doc>
 <arguments>
 <arg>'${UserData.Password}' == '#BLANK'</arg>
-<arg>Fill Password Field</arg>
+<arg>Login Fill Password Field</arg>
 <arg>${UserData.Password}</arg>
 </arguments>
-<kw name="Fill Password Field">
+<kw name="Login Fill Password Field" library="Login">
 <arguments>
 <arg>${UserData.Password}</arg>
 </arguments>
-<msg timestamp="20180501 19:06:36.307" level="FAIL">Multiple keywords with name 'Fill Password Field' found. Give the full name of the keyword you want to use:
-    Login.Fill Password Field
-    Register.Fill Password Field</msg>
-<status status="FAIL" endtime="20180501 19:06:36.307" starttime="20180501 19:06:36.307"></status>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>${LOGIN_PASSWORD_INPUT}</arg>
+<arg>${Password}</arg>
+</arguments>
+<msg timestamp="20180501 19:19:16.567" level="INFO">Typing text '123456' into text field 'xpath=//input[@id='password']'</msg>
+<status status="PASS" endtime="20180501 19:19:16.629" starttime="20180501 19:19:16.567"></status>
 </kw>
-<status status="FAIL" endtime="20180501 19:06:36.307" starttime="20180501 19:06:36.307"></status>
+<status status="PASS" endtime="20180501 19:19:16.629" starttime="20180501 19:19:16.567"></status>
 </kw>
-<status status="FAIL" endtime="20180501 19:06:36.307" starttime="20180501 19:06:36.244"></status>
+<status status="PASS" endtime="20180501 19:19:16.629" starttime="20180501 19:19:16.567"></status>
 </kw>
-<status status="FAIL" endtime="20180501 19:06:36.307" starttime="20180501 19:06:08.620"></status>
+<kw name="Click Login Button" library="Login">
+<kw name="Click Button" library="Selenium2Library">
+<doc>Clicks a button identified by `locator`.</doc>
+<arguments>
+<arg>${LOGIN_SUBMIT_BUTTON}</arg>
+</arguments>
+<msg timestamp="20180501 19:19:16.629" level="INFO">Clicking button 'name=login'.</msg>
+<status status="PASS" endtime="20180501 19:19:28.892" starttime="20180501 19:19:16.629"></status>
+</kw>
+<status status="PASS" endtime="20180501 19:19:28.907" starttime="20180501 19:19:16.629"></status>
+</kw>
+<status status="PASS" endtime="20180501 19:19:28.907" starttime="20180501 19:19:16.504"></status>
+</kw>
+<kw name="Verify Error Message" library="Login">
+<arguments>
+<arg>${UserData.ExpectedErrorMessage}</arg>
+</arguments>
+<kw name="Wait Until Page Contains" library="Selenium2Library">
+<doc>Waits until `text` appears on current page.</doc>
+<arguments>
+<arg>${ErrorMessage}</arg>
+</arguments>
+<status status="PASS" endtime="20180501 19:19:28.939" starttime="20180501 19:19:28.907"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5s</arg>
+</arguments>
+<msg timestamp="20180501 19:19:33.940" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" endtime="20180501 19:19:33.940" starttime="20180501 19:19:28.939"></status>
+</kw>
+<status status="PASS" endtime="20180501 19:19:33.940" starttime="20180501 19:19:28.907"></status>
+</kw>
+<status status="PASS" endtime="20180501 19:19:33.940" starttime="20180501 19:18:38.172"></status>
+</kw>
+<kw name="Test Multiple Login Scenarios" library="MyAccountPageApp">
+<arguments>
+<arg>${LOGIN_INVALID_PASSWORD}</arg>
+</arguments>
+<kw name="Page Loaded" library="LandingPage">
+<kw name="Open Landing Page" library="LandingPage">
+<kw name="Go To" library="Selenium2Library">
+<doc>Navigates the active browser instance to the provided URL.</doc>
+<arguments>
+<arg>${BASE_URL}</arg>
+</arguments>
+<msg timestamp="20180501 19:19:33.940" level="INFO">Opening url 'http://practice.automationtesting.in/'</msg>
+<status status="PASS" endtime="20180501 19:19:49.397" starttime="20180501 19:19:33.940"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2s</arg>
+</arguments>
+<msg timestamp="20180501 19:19:51.397" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" endtime="20180501 19:19:51.397" starttime="20180501 19:19:49.397"></status>
+</kw>
+<status status="PASS" endtime="20180501 19:19:51.397" starttime="20180501 19:19:33.940"></status>
+</kw>
+<kw name="Verify Landing Page Loaded" library="LandingPage">
+<kw name="Page Should Contain Image" library="Selenium2Library">
+<doc>Verifies image identified by `locator` is found from current page.</doc>
+<arguments>
+<arg>${Image_Path}</arg>
+</arguments>
+<msg timestamp="20180501 19:19:51.413" level="INFO">Current page contains image 'xpath=//*[@id="n2-ss-6"]/div[1]/div/div/div[1]/div[1]/img'.</msg>
+<status status="PASS" endtime="20180501 19:19:51.413" starttime="20180501 19:19:51.397"></status>
+</kw>
+<status status="PASS" endtime="20180501 19:19:51.413" starttime="20180501 19:19:51.397"></status>
+</kw>
+<status status="PASS" endtime="20180501 19:19:51.413" starttime="20180501 19:19:33.940"></status>
+</kw>
+<kw name="Go To My Account Page" library="TopNav">
+<kw name="Click Link" library="Selenium2Library">
+<doc>Clicks a link identified by locator.</doc>
+<arguments>
+<arg>${Link_Account_Locator}</arg>
+</arguments>
+<msg timestamp="20180501 19:19:51.413" level="INFO">Clicking link 'xpath=//*[@id="menu-item-50"]/a'.</msg>
+<status status="PASS" endtime="20180501 19:19:56.491" starttime="20180501 19:19:51.413"></status>
+</kw>
+<status status="PASS" endtime="20180501 19:19:56.491" starttime="20180501 19:19:51.413"></status>
+</kw>
+<kw name="Verify Page Loaded" library="Login">
+<kw name="Wait Until Page Contains" library="Selenium2Library">
+<doc>Waits until `text` appears on current page.</doc>
+<arguments>
+<arg>${LOGIN_TEXT}</arg>
+</arguments>
+<status status="PASS" endtime="20180501 19:19:56.554" starttime="20180501 19:19:56.491"></status>
+</kw>
+<status status="PASS" endtime="20180501 19:19:56.554" starttime="20180501 19:19:56.491"></status>
+</kw>
+<kw name="Fill Login Fields and Submit" library="Login">
+<arguments>
+<arg>${UserData}</arg>
+</arguments>
+<kw name="Run Keyword Unless" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments, if ``condition`` is false.</doc>
+<arguments>
+<arg>'${UserData.User}' == '#BLANK'</arg>
+<arg>Login Fill Username Field</arg>
+<arg>${UserData.User}</arg>
+</arguments>
+<kw name="Login Fill Username Field" library="Login">
+<arguments>
+<arg>${UserData.User}</arg>
+</arguments>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>${LOGIN_USERNAME_INPUT}</arg>
+<arg>${Username}</arg>
+</arguments>
+<msg timestamp="20180501 19:19:56.554" level="INFO">Typing text 'test' into text field 'xpath=//input[@id='username']'</msg>
+<status status="PASS" endtime="20180501 19:19:56.710" starttime="20180501 19:19:56.554"></status>
+</kw>
+<status status="PASS" endtime="20180501 19:19:56.710" starttime="20180501 19:19:56.554"></status>
+</kw>
+<status status="PASS" endtime="20180501 19:19:56.710" starttime="20180501 19:19:56.554"></status>
+</kw>
+<kw name="Run Keyword Unless" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments, if ``condition`` is false.</doc>
+<arguments>
+<arg>'${UserData.Password}' == '#BLANK'</arg>
+<arg>Login Fill Password Field</arg>
+<arg>${UserData.Password}</arg>
+</arguments>
+<kw name="Login Fill Password Field" library="Login">
+<arguments>
+<arg>${UserData.Password}</arg>
+</arguments>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>${LOGIN_PASSWORD_INPUT}</arg>
+<arg>${Password}</arg>
+</arguments>
+<msg timestamp="20180501 19:19:56.710" level="INFO">Typing text '123456' into text field 'xpath=//input[@id='password']'</msg>
+<status status="PASS" endtime="20180501 19:19:56.757" starttime="20180501 19:19:56.710"></status>
+</kw>
+<status status="PASS" endtime="20180501 19:19:56.757" starttime="20180501 19:19:56.710"></status>
+</kw>
+<status status="PASS" endtime="20180501 19:19:56.757" starttime="20180501 19:19:56.710"></status>
+</kw>
+<kw name="Click Login Button" library="Login">
+<kw name="Click Button" library="Selenium2Library">
+<doc>Clicks a button identified by `locator`.</doc>
+<arguments>
+<arg>${LOGIN_SUBMIT_BUTTON}</arg>
+</arguments>
+<msg timestamp="20180501 19:19:56.757" level="INFO">Clicking button 'name=login'.</msg>
+<status status="PASS" endtime="20180501 19:20:03.912" starttime="20180501 19:19:56.757"></status>
+</kw>
+<status status="PASS" endtime="20180501 19:20:03.912" starttime="20180501 19:19:56.757"></status>
+</kw>
+<status status="PASS" endtime="20180501 19:20:03.912" starttime="20180501 19:19:56.554"></status>
+</kw>
+<kw name="Verify Error Message" library="Login">
+<arguments>
+<arg>${UserData.ExpectedErrorMessage}</arg>
+</arguments>
+<kw name="Wait Until Page Contains" library="Selenium2Library">
+<doc>Waits until `text` appears on current page.</doc>
+<arguments>
+<arg>${ErrorMessage}</arg>
+</arguments>
+<status status="PASS" endtime="20180501 19:20:04.057" starttime="20180501 19:20:03.914"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5s</arg>
+</arguments>
+<msg timestamp="20180501 19:20:09.063" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" endtime="20180501 19:20:09.063" starttime="20180501 19:20:04.058"></status>
+</kw>
+<status status="PASS" endtime="20180501 19:20:09.064" starttime="20180501 19:20:03.913"></status>
+</kw>
+<status status="PASS" endtime="20180501 19:20:09.064" starttime="20180501 19:19:33.940"></status>
+</kw>
+<kw name="Test Multiple Login Scenarios" library="MyAccountPageApp">
+<arguments>
+<arg>${LOGIN_EMPTY_PASSWORD}</arg>
+</arguments>
+<kw name="Page Loaded" library="LandingPage">
+<kw name="Open Landing Page" library="LandingPage">
+<kw name="Go To" library="Selenium2Library">
+<doc>Navigates the active browser instance to the provided URL.</doc>
+<arguments>
+<arg>${BASE_URL}</arg>
+</arguments>
+<msg timestamp="20180501 19:20:09.066" level="INFO">Opening url 'http://practice.automationtesting.in/'</msg>
+<status status="PASS" endtime="20180501 19:20:18.371" starttime="20180501 19:20:09.066"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2s</arg>
+</arguments>
+<msg timestamp="20180501 19:20:20.373" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" endtime="20180501 19:20:20.374" starttime="20180501 19:20:18.372"></status>
+</kw>
+<status status="PASS" endtime="20180501 19:20:20.374" starttime="20180501 19:20:09.066"></status>
+</kw>
+<kw name="Verify Landing Page Loaded" library="LandingPage">
+<kw name="Page Should Contain Image" library="Selenium2Library">
+<doc>Verifies image identified by `locator` is found from current page.</doc>
+<arguments>
+<arg>${Image_Path}</arg>
+</arguments>
+<msg timestamp="20180501 19:20:20.442" level="INFO">Current page contains image 'xpath=//*[@id="n2-ss-6"]/div[1]/div/div/div[1]/div[1]/img'.</msg>
+<status status="PASS" endtime="20180501 19:20:20.442" starttime="20180501 19:20:20.375"></status>
+</kw>
+<status status="PASS" endtime="20180501 19:20:20.443" starttime="20180501 19:20:20.374"></status>
+</kw>
+<status status="PASS" endtime="20180501 19:20:20.443" starttime="20180501 19:20:09.065"></status>
+</kw>
+<kw name="Go To My Account Page" library="TopNav">
+<kw name="Click Link" library="Selenium2Library">
+<doc>Clicks a link identified by locator.</doc>
+<arguments>
+<arg>${Link_Account_Locator}</arg>
+</arguments>
+<msg timestamp="20180501 19:20:20.445" level="INFO">Clicking link 'xpath=//*[@id="menu-item-50"]/a'.</msg>
+<status status="PASS" endtime="20180501 19:20:29.451" starttime="20180501 19:20:20.444"></status>
+</kw>
+<status status="PASS" endtime="20180501 19:20:29.451" starttime="20180501 19:20:20.443"></status>
+</kw>
+<kw name="Verify Page Loaded" library="Login">
+<kw name="Wait Until Page Contains" library="Selenium2Library">
+<doc>Waits until `text` appears on current page.</doc>
+<arguments>
+<arg>${LOGIN_TEXT}</arg>
+</arguments>
+<status status="PASS" endtime="20180501 19:20:29.607" starttime="20180501 19:20:29.451"></status>
+</kw>
+<status status="PASS" endtime="20180501 19:20:29.607" starttime="20180501 19:20:29.451"></status>
+</kw>
+<kw name="Fill Login Fields and Submit" library="Login">
+<arguments>
+<arg>${UserData}</arg>
+</arguments>
+<kw name="Run Keyword Unless" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments, if ``condition`` is false.</doc>
+<arguments>
+<arg>'${UserData.User}' == '#BLANK'</arg>
+<arg>Login Fill Username Field</arg>
+<arg>${UserData.User}</arg>
+</arguments>
+<kw name="Login Fill Username Field" library="Login">
+<arguments>
+<arg>${UserData.User}</arg>
+</arguments>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>${LOGIN_USERNAME_INPUT}</arg>
+<arg>${Username}</arg>
+</arguments>
+<msg timestamp="20180501 19:20:29.623" level="INFO">Typing text 'test' into text field 'xpath=//input[@id='username']'</msg>
+<status status="PASS" endtime="20180501 19:20:29.795" starttime="20180501 19:20:29.607"></status>
+</kw>
+<status status="PASS" endtime="20180501 19:20:29.795" starttime="20180501 19:20:29.607"></status>
+</kw>
+<status status="PASS" endtime="20180501 19:20:29.795" starttime="20180501 19:20:29.607"></status>
+</kw>
+<kw name="Run Keyword Unless" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments, if ``condition`` is false.</doc>
+<arguments>
+<arg>'${UserData.Password}' == '#BLANK'</arg>
+<arg>Login Fill Password Field</arg>
+<arg>${UserData.Password}</arg>
+</arguments>
+<status status="PASS" endtime="20180501 19:20:29.795" starttime="20180501 19:20:29.795"></status>
+</kw>
+<kw name="Click Login Button" library="Login">
+<kw name="Click Button" library="Selenium2Library">
+<doc>Clicks a button identified by `locator`.</doc>
+<arguments>
+<arg>${LOGIN_SUBMIT_BUTTON}</arg>
+</arguments>
+<msg timestamp="20180501 19:20:29.795" level="INFO">Clicking button 'name=login'.</msg>
+<status status="PASS" endtime="20180501 19:20:40.044" starttime="20180501 19:20:29.795"></status>
+</kw>
+<status status="PASS" endtime="20180501 19:20:40.044" starttime="20180501 19:20:29.795"></status>
+</kw>
+<status status="PASS" endtime="20180501 19:20:40.044" starttime="20180501 19:20:29.607"></status>
+</kw>
+<kw name="Verify Error Message" library="Login">
+<arguments>
+<arg>${UserData.ExpectedErrorMessage}</arg>
+</arguments>
+<kw name="Wait Until Page Contains" library="Selenium2Library">
+<doc>Waits until `text` appears on current page.</doc>
+<arguments>
+<arg>${ErrorMessage}</arg>
+</arguments>
+<status status="PASS" endtime="20180501 19:20:40.094" starttime="20180501 19:20:40.046"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5s</arg>
+</arguments>
+<msg timestamp="20180501 19:20:45.101" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" endtime="20180501 19:20:45.101" starttime="20180501 19:20:40.094"></status>
+</kw>
+<status status="PASS" endtime="20180501 19:20:45.101" starttime="20180501 19:20:40.045"></status>
+</kw>
+<status status="PASS" endtime="20180501 19:20:45.101" starttime="20180501 19:20:09.065"></status>
+</kw>
+<kw name="Test Multiple Login Scenarios" library="MyAccountPageApp">
+<arguments>
+<arg>${LOGIN_EMPTY_USERNAME}</arg>
+</arguments>
+<kw name="Page Loaded" library="LandingPage">
+<kw name="Open Landing Page" library="LandingPage">
+<kw name="Go To" library="Selenium2Library">
+<doc>Navigates the active browser instance to the provided URL.</doc>
+<arguments>
+<arg>${BASE_URL}</arg>
+</arguments>
+<msg timestamp="20180501 19:20:45.101" level="INFO">Opening url 'http://practice.automationtesting.in/'</msg>
+<status status="PASS" endtime="20180501 19:20:52.257" starttime="20180501 19:20:45.101"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2s</arg>
+</arguments>
+<msg timestamp="20180501 19:20:54.257" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" endtime="20180501 19:20:54.257" starttime="20180501 19:20:52.257"></status>
+</kw>
+<status status="PASS" endtime="20180501 19:20:54.257" starttime="20180501 19:20:45.101"></status>
+</kw>
+<kw name="Verify Landing Page Loaded" library="LandingPage">
+<kw name="Page Should Contain Image" library="Selenium2Library">
+<doc>Verifies image identified by `locator` is found from current page.</doc>
+<arguments>
+<arg>${Image_Path}</arg>
+</arguments>
+<msg timestamp="20180501 19:20:54.272" level="INFO">Current page contains image 'xpath=//*[@id="n2-ss-6"]/div[1]/div/div/div[1]/div[1]/img'.</msg>
+<status status="PASS" endtime="20180501 19:20:54.272" starttime="20180501 19:20:54.257"></status>
+</kw>
+<status status="PASS" endtime="20180501 19:20:54.272" starttime="20180501 19:20:54.257"></status>
+</kw>
+<status status="PASS" endtime="20180501 19:20:54.272" starttime="20180501 19:20:45.101"></status>
+</kw>
+<kw name="Go To My Account Page" library="TopNav">
+<kw name="Click Link" library="Selenium2Library">
+<doc>Clicks a link identified by locator.</doc>
+<arguments>
+<arg>${Link_Account_Locator}</arg>
+</arguments>
+<msg timestamp="20180501 19:20:54.272" level="INFO">Clicking link 'xpath=//*[@id="menu-item-50"]/a'.</msg>
+<status status="PASS" endtime="20180501 19:21:03.427" starttime="20180501 19:20:54.272"></status>
+</kw>
+<status status="PASS" endtime="20180501 19:21:03.427" starttime="20180501 19:20:54.272"></status>
+</kw>
+<kw name="Verify Page Loaded" library="Login">
+<kw name="Wait Until Page Contains" library="Selenium2Library">
+<doc>Waits until `text` appears on current page.</doc>
+<arguments>
+<arg>${LOGIN_TEXT}</arg>
+</arguments>
+<status status="PASS" endtime="20180501 19:21:03.505" starttime="20180501 19:21:03.427"></status>
+</kw>
+<status status="PASS" endtime="20180501 19:21:03.505" starttime="20180501 19:21:03.427"></status>
+</kw>
+<kw name="Fill Login Fields and Submit" library="Login">
+<arguments>
+<arg>${UserData}</arg>
+</arguments>
+<kw name="Run Keyword Unless" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments, if ``condition`` is false.</doc>
+<arguments>
+<arg>'${UserData.User}' == '#BLANK'</arg>
+<arg>Login Fill Username Field</arg>
+<arg>${UserData.User}</arg>
+</arguments>
+<status status="PASS" endtime="20180501 19:21:03.505" starttime="20180501 19:21:03.505"></status>
+</kw>
+<kw name="Run Keyword Unless" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments, if ``condition`` is false.</doc>
+<arguments>
+<arg>'${UserData.Password}' == '#BLANK'</arg>
+<arg>Login Fill Password Field</arg>
+<arg>${UserData.Password}</arg>
+</arguments>
+<kw name="Login Fill Password Field" library="Login">
+<arguments>
+<arg>${UserData.Password}</arg>
+</arguments>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>${LOGIN_PASSWORD_INPUT}</arg>
+<arg>${Password}</arg>
+</arguments>
+<msg timestamp="20180501 19:21:03.521" level="INFO">Typing text '123456' into text field 'xpath=//input[@id='password']'</msg>
+<status status="PASS" endtime="20180501 19:21:03.693" starttime="20180501 19:21:03.521"></status>
+</kw>
+<status status="PASS" endtime="20180501 19:21:03.693" starttime="20180501 19:21:03.521"></status>
+</kw>
+<status status="PASS" endtime="20180501 19:21:03.693" starttime="20180501 19:21:03.521"></status>
+</kw>
+<kw name="Click Login Button" library="Login">
+<kw name="Click Button" library="Selenium2Library">
+<doc>Clicks a button identified by `locator`.</doc>
+<arguments>
+<arg>${LOGIN_SUBMIT_BUTTON}</arg>
+</arguments>
+<msg timestamp="20180501 19:21:03.693" level="INFO">Clicking button 'name=login'.</msg>
+<status status="PASS" endtime="20180501 19:21:06.634" starttime="20180501 19:21:03.693"></status>
+</kw>
+<status status="PASS" endtime="20180501 19:21:06.634" starttime="20180501 19:21:03.693"></status>
+</kw>
+<status status="PASS" endtime="20180501 19:21:06.635" starttime="20180501 19:21:03.505"></status>
+</kw>
+<kw name="Verify Error Message" library="Login">
+<arguments>
+<arg>${UserData.ExpectedErrorMessage}</arg>
+</arguments>
+<kw name="Wait Until Page Contains" library="Selenium2Library">
+<doc>Waits until `text` appears on current page.</doc>
+<arguments>
+<arg>${ErrorMessage}</arg>
+</arguments>
+<status status="PASS" endtime="20180501 19:21:06.663" starttime="20180501 19:21:06.637"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5s</arg>
+</arguments>
+<msg timestamp="20180501 19:21:11.671" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" endtime="20180501 19:21:11.671" starttime="20180501 19:21:06.663"></status>
+</kw>
+<status status="PASS" endtime="20180501 19:21:11.671" starttime="20180501 19:21:06.636"></status>
+</kw>
+<status status="PASS" endtime="20180501 19:21:11.671" starttime="20180501 19:20:45.101"></status>
+</kw>
+<kw name="Test Multiple Login Scenarios" library="MyAccountPageApp">
+<arguments>
+<arg>${LOGIN_EMPTY_USERNAME_PASSWORD}</arg>
+</arguments>
+<kw name="Page Loaded" library="LandingPage">
+<kw name="Open Landing Page" library="LandingPage">
+<kw name="Go To" library="Selenium2Library">
+<doc>Navigates the active browser instance to the provided URL.</doc>
+<arguments>
+<arg>${BASE_URL}</arg>
+</arguments>
+<msg timestamp="20180501 19:21:11.671" level="INFO">Opening url 'http://practice.automationtesting.in/'</msg>
+<status status="PASS" endtime="20180501 19:21:15.171" starttime="20180501 19:21:11.671"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2s</arg>
+</arguments>
+<msg timestamp="20180501 19:21:17.171" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" endtime="20180501 19:21:17.171" starttime="20180501 19:21:15.171"></status>
+</kw>
+<status status="PASS" endtime="20180501 19:21:17.171" starttime="20180501 19:21:11.671"></status>
+</kw>
+<kw name="Verify Landing Page Loaded" library="LandingPage">
+<kw name="Page Should Contain Image" library="Selenium2Library">
+<doc>Verifies image identified by `locator` is found from current page.</doc>
+<arguments>
+<arg>${Image_Path}</arg>
+</arguments>
+<msg timestamp="20180501 19:21:17.186" level="INFO">Current page contains image 'xpath=//*[@id="n2-ss-6"]/div[1]/div/div/div[1]/div[1]/img'.</msg>
+<status status="PASS" endtime="20180501 19:21:17.186" starttime="20180501 19:21:17.171"></status>
+</kw>
+<status status="PASS" endtime="20180501 19:21:17.186" starttime="20180501 19:21:17.171"></status>
+</kw>
+<status status="PASS" endtime="20180501 19:21:17.186" starttime="20180501 19:21:11.671"></status>
+</kw>
+<kw name="Go To My Account Page" library="TopNav">
+<kw name="Click Link" library="Selenium2Library">
+<doc>Clicks a link identified by locator.</doc>
+<arguments>
+<arg>${Link_Account_Locator}</arg>
+</arguments>
+<msg timestamp="20180501 19:21:17.186" level="INFO">Clicking link 'xpath=//*[@id="menu-item-50"]/a'.</msg>
+<status status="PASS" endtime="20180501 19:21:20.593" starttime="20180501 19:21:17.186"></status>
+</kw>
+<status status="PASS" endtime="20180501 19:21:20.593" starttime="20180501 19:21:17.186"></status>
+</kw>
+<kw name="Verify Page Loaded" library="Login">
+<kw name="Wait Until Page Contains" library="Selenium2Library">
+<doc>Waits until `text` appears on current page.</doc>
+<arguments>
+<arg>${LOGIN_TEXT}</arg>
+</arguments>
+<status status="PASS" endtime="20180501 19:21:20.640" starttime="20180501 19:21:20.608"></status>
+</kw>
+<status status="PASS" endtime="20180501 19:21:20.640" starttime="20180501 19:21:20.593"></status>
+</kw>
+<kw name="Fill Login Fields and Submit" library="Login">
+<arguments>
+<arg>${UserData}</arg>
+</arguments>
+<kw name="Run Keyword Unless" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments, if ``condition`` is false.</doc>
+<arguments>
+<arg>'${UserData.User}' == '#BLANK'</arg>
+<arg>Login Fill Username Field</arg>
+<arg>${UserData.User}</arg>
+</arguments>
+<status status="PASS" endtime="20180501 19:21:20.655" starttime="20180501 19:21:20.655"></status>
+</kw>
+<kw name="Run Keyword Unless" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments, if ``condition`` is false.</doc>
+<arguments>
+<arg>'${UserData.Password}' == '#BLANK'</arg>
+<arg>Login Fill Password Field</arg>
+<arg>${UserData.Password}</arg>
+</arguments>
+<kw name="Login Fill Password Field" library="Login">
+<arguments>
+<arg>${UserData.Password}</arg>
+</arguments>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>${LOGIN_PASSWORD_INPUT}</arg>
+<arg>${Password}</arg>
+</arguments>
+<msg timestamp="20180501 19:21:20.655" level="INFO">Typing text 'BLANK' into text field 'xpath=//input[@id='password']'</msg>
+<status status="PASS" endtime="20180501 19:21:20.686" starttime="20180501 19:21:20.655"></status>
+</kw>
+<status status="PASS" endtime="20180501 19:21:20.686" starttime="20180501 19:21:20.655"></status>
+</kw>
+<status status="PASS" endtime="20180501 19:21:20.686" starttime="20180501 19:21:20.655"></status>
+</kw>
+<kw name="Click Login Button" library="Login">
+<kw name="Click Button" library="Selenium2Library">
+<doc>Clicks a button identified by `locator`.</doc>
+<arguments>
+<arg>${LOGIN_SUBMIT_BUTTON}</arg>
+</arguments>
+<msg timestamp="20180501 19:21:20.686" level="INFO">Clicking button 'name=login'.</msg>
+<status status="PASS" endtime="20180501 19:21:24.499" starttime="20180501 19:21:20.686"></status>
+</kw>
+<status status="PASS" endtime="20180501 19:21:24.499" starttime="20180501 19:21:20.686"></status>
+</kw>
+<status status="PASS" endtime="20180501 19:21:24.499" starttime="20180501 19:21:20.640"></status>
+</kw>
+<kw name="Verify Error Message" library="Login">
+<arguments>
+<arg>${UserData.ExpectedErrorMessage}</arg>
+</arguments>
+<kw name="Wait Until Page Contains" library="Selenium2Library">
+<doc>Waits until `text` appears on current page.</doc>
+<arguments>
+<arg>${ErrorMessage}</arg>
+</arguments>
+<status status="PASS" endtime="20180501 19:21:24.530" starttime="20180501 19:21:24.499"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5s</arg>
+</arguments>
+<msg timestamp="20180501 19:21:29.530" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" endtime="20180501 19:21:29.530" starttime="20180501 19:21:24.530"></status>
+</kw>
+<status status="PASS" endtime="20180501 19:21:29.530" starttime="20180501 19:21:24.499"></status>
+</kw>
+<status status="PASS" endtime="20180501 19:21:29.530" starttime="20180501 19:21:11.671"></status>
 </kw>
 <kw type="teardown" name="End Web Test" library="Commom">
 <kw name="Close All Browsers" library="Selenium2Library">
 <doc>Closes all open browsers and resets the browser cache.</doc>
-<status status="PASS" endtime="20180501 19:06:39.869" starttime="20180501 19:06:36.307"></status>
+<status status="PASS" endtime="20180501 19:21:35.187" starttime="20180501 19:21:29.530"></status>
 </kw>
-<status status="PASS" endtime="20180501 19:06:39.869" starttime="20180501 19:06:36.307"></status>
+<status status="PASS" endtime="20180501 19:21:35.187" starttime="20180501 19:21:29.530"></status>
 </kw>
-<status status="FAIL" endtime="20180501 19:06:39.869" critical="yes" starttime="20180501 19:05:51.729">Multiple keywords with name 'Fill Password Field' found. Give the full name of the keyword you want to use:
-    Login.Fill Password Field
-    Register.Fill Password Field</status>
+<status status="PASS" endtime="20180501 19:21:35.202" critical="yes" starttime="20180501 19:18:24.938"></status>
 </test>
-<status status="FAIL" endtime="20180501 19:06:39.869" starttime="20180501 19:02:35.851"></status>
+<status status="PASS" endtime="20180501 19:21:35.202" starttime="20180501 19:15:15.812"></status>
 </suite>
 <statistics>
 <total>
-<stat fail="1" pass="1">Critical Tests</stat>
-<stat fail="1" pass="1">All Tests</stat>
+<stat fail="0" pass="2">Critical Tests</stat>
+<stat fail="0" pass="2">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat fail="1" id="s1" name="MyAccountPageTests" pass="1">MyAccountPageTests</stat>
+<stat fail="0" id="s1" name="MyAccountPageTests" pass="2">MyAccountPageTests</stat>
 </suite>
 </statistics>
 <errors>

@@ -2,6 +2,7 @@
 Library  Selenium2Library
 Resource  ../../Data/InputData.robot
 
+
 *** Variables ***
 ${LOGIN_TEXT} =  Login
 ${LOGIN_USERNAME_INPUT}=  xpath=//input[@id='username']

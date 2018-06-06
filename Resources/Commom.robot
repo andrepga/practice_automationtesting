@@ -4,7 +4,6 @@ Resource  ../Data/InputData.robot
 
 *** Variables ***
 
-
 *** Keywords ***
 Start Web Test
     Open Browser  about:blank  ${BROWSER}

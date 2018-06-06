@@ -2,6 +2,7 @@
 Library  Selenium2Library
 Resource  ../../Data/InputData.robot
 
+
 *** Variables ***
 ${Image_Path} =  xpath=//*[@id="n2-ss-6"]/div[1]/div/div/div[1]/div[1]/img
 

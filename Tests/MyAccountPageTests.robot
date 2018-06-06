@@ -8,6 +8,7 @@ Test Teardown  End Web Test
 
 *** Variables ***
 
+
 *** Test Cases ***
 Invalid Register Scenarios Should Display Corret Error Message
     [Template]  MyAccountPageApp.Test Multiple Register Scenarios

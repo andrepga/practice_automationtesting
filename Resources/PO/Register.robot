@@ -1,7 +1,6 @@
 *** Settings ***
 Library  Selenium2Library
 
-
 *** Variables ***
 ${REGISTER_TEXT} =  Register
 ${REGISTER_EMAIL_INPUT}=  xpath=//input[@id='reg_email']

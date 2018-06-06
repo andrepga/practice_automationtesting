@@ -6,7 +6,6 @@ Resource  ../Resources/PO/Login.robot
 
 *** Variables ***
 
-
 *** Keywords ***
 Test Multiple Register Scenarios
     [Arguments]  ${UserData}
