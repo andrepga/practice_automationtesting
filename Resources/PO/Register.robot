@@ -3,7 +3,7 @@ Library  Selenium2Library
 
 *** Variables ***
 ${REGISTER_TEXT} =  Register
-${REGISTER_EMAIL_INPUT}=  xpath=//input[@id='reg_email']
+${REGISTER_EMAIL_Input}=  xpath=//input[@id='reg_email']
 ${REGISTER_PASSWORD}=  xpath=//input[@id='reg_password']
 ${REGISTER_SUBMIT_BUTTON}=  name=register
 
@@ -15,7 +15,7 @@ Verify Page Loaded
 
 Register Fill Email Field
     [Arguments]  ${Email}
-    Input Text  ${REGISTER_EMAIL_INPUT}  ${Email}
+    Input Text  ${REGISTER_EMAIL_Input}  ${Email}
 
 
 Register Fill Password Field
