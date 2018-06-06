@@ -13,16 +13,13 @@ ${LOGIN_SUBMIT_BUTTON}=  name=login
 Verify Page Loaded
   Wait Until Page Contains  ${LOGIN_TEXT}
 
-
 Login Fill Username Field
   [Arguments]  ${Username}
   Input Text  ${LOGIN_USERNAME_INPUT}  ${Username}
 
-
 Login Fill Password Field
   [Arguments]  ${Password}
   Input Text  ${LOGIN_PASSWORD_INPUT}  ${Password}
-
 
 
 Click Login Button
