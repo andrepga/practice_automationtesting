@@ -12,7 +12,7 @@ Test Teardown  End Web Test
 *** Test Cases ***
 Invalid Register Scenarios Should Display Corret Error Message
     [Template]  MyAccountPageApp.Test Multiple Register Scenarios
-    [Tags]  final_round
+    [Tags]  master
     ${REGISTRATION_INVALID_EMAIL}
     ${REGISTRATION_EMPTY_EMAIL}
     ${REGISTRATION_EMPTY_PASSWORD}
@@ -21,7 +21,7 @@ Invalid Register Scenarios Should Display Corret Error Message
 
 Invalid Login Scenarios Should Display Correct Error Message
    [Template]  MyAccountPageApp.Test Multiple Login Scenarios
-   [Tags]  final_round
+   [Tags]  master
    ${LOGIN_INVALID_USER}
    ${LOGIN_INVALID_PASSWORD}
    ${LOGIN_EMPTY_PASSWORD}
